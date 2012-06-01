@@ -97,7 +97,7 @@ on boot
     chown radio radio   /sys/module/pm/parameters/idle_sleep_mode
 
     chmod 0666 /dev/rfkill
-    chmod 0666 /dev/q6venc
+    #chmod 0666 /dev/q6venc
     chmod 0666 /proc/cmdline
 
     chmod 666 /dev/input/event0
