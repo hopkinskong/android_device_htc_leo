@@ -145,6 +145,9 @@ $SED -i \
 	-e '/ro\.build\.type/s/eng/user/' \
 	$REPACK/ota/system/build.prop
 
+# include bootloader script for leo
+. $ANDROID_BUILD_TOP/device/htc/leo/releasetools/bootloader.sh
+
 # Delete unnecessary binaries
 ( cd $REPACK/ota/system/bin; echo $DELETE_BINS | xargs rm -f; )
 
