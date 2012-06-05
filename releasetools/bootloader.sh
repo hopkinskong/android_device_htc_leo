@@ -6,8 +6,8 @@
 echo "updater-script: Making Compatible Update script"
 cd $REPACK/ota/META-INF/com/google/android
 
-awk '{if (match($0,"boot.img")) exit; print > "head"}' updater-script
-awk '/boot.img/ {p=1}; p==1 {print > "tail"}' updater-script
+awk '{if (match($0,"0.200000, 10")) exit; print > "head"}' updater-script
+awk '/0.200000, 10/ {p=1}; p==1 {print > "tail"}' updater-script
 rm -rf updater-script
 
 cat head > updater-script
