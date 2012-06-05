@@ -102,6 +102,7 @@ PRODUCT_COPY_FILES += \
 # This file is used to install the enable RMNET and corresponding modules which dont get activated by normal module script, mount cache so that downloads work correctly
 PRODUCT_COPY_FILES += \
 	device/htc/leo/prebuilt/init.d/01modules:system/etc/init.d/01modules \
+	device/htc/leo/prebuilt/init.d/02usb_tethering:system/etc/init.d/02usb_tethering \
 	device/htc/leo/prebuilt/init.d/10mic_level:system/etc/init.d/10mic_level \
 	device/htc/leo/prebuilt/init.d/97ppp:system/etc/init.d/97ppp
 
