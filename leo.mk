@@ -157,6 +157,7 @@ PRODUCT_PACKAGES += \
 	Stk \
 	Camera \
 	Torch \
+	librs_jni \
 	Launcher2
 	
 # strict mode
