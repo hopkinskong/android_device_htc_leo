@@ -228,29 +228,9 @@ PRODUCT_COPY_FILES += \
 	device/htc/leo/prebuilt/ppp/ppp:system/ppp \
 	device/htc/leo/prebuilt/ppp/options:system/etc/ppp/options
 
-# Kernel Modules
-PRODUCT_COPY_FILES += $(shell \
-	find device/htc/leo/prebuilt/modules -name '*.ko' \
-	| sed -r 's/^\/?(.*\/)([^/ ]+)$$/\1\2:system\/lib\/modules\/\2/' \
-	| tr '\n' ' ')
-
-# kernel
-PRODUCT_COPY_FILES += \
-	device/htc/leo/prebuilt/kernel:kernel
-
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/htc/leo/prebuilt/kernel
-else
-	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
 # The gps config appropriate for this device
 PRODUCT_COPY_FILES += \
 	device/htc/leo/prebuilt/gps.conf:system/etc/gps.conf
-
-PRODUCT_COPY_FILES += \
-	$(LOCAL_KERNEL):kernel
-
 
 # stuff common to all HTC phones
 $(call inherit-product, device/htc/common/common.mk)

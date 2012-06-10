@@ -125,6 +125,10 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
+
+# Define kernel config for inline building
+TARGET_KERNEL_CONFIG := htcleo_defconfig
+
 TARGET_PREBUILT_KERNEL := device/htc/leo/prebuilt/kernel
 
 # to enable the GPS HAL
