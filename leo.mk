@@ -165,8 +165,8 @@ ADDITIONAL_DEFAULT_PROPERTIES += persist.sys.strictmode.disable=true
 	
 # make fallback to mdpi possible
 # e.g. for maintaining crisp assets on 160dpi
-PRODUCT_AAPT_CONFIG := normal mdpi hdpi
-PRODUCT_AAPT_PREF_CONFIG := hdpi
+PRODUCT_AAPT_CONFIG := normal hdpi mdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi mdpi
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	debug.sf.hw=1 \
