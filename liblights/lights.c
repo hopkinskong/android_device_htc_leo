@@ -40,18 +40,15 @@ static struct light_state_t g_battery;
 static int g_backlight = 255;
 
 // battery state checker vars
+#define BATT_NONE		1
+#define BATT_FULL		5
+#define BATT_CHARGING	9
+
 static pthread_t t_battery_checker = 0;
 static int battery_thread_check = 1;
 static int last_battery_state = 0;
 static int force_led_amber = 0;
 static int battery_thread_running = 0;
-
-// alternate blinking led vars
-static pthread_t t_alt_led = 0;
-static int alt_thread_check = 1;
-static int alt_thread_running = 0;
-unsigned int main_led;
-unsigned int alt_led;
 
 // sysfs files
 char const*const AMBER_LED_FILE = "/sys/class/leds/amber/brightness";
@@ -187,101 +184,6 @@ static void set_speaker_light_locked (struct light_device_t *dev, struct light_s
 }
 
 /*
-* thread routine for alternating LEDs
-* Copyright (C) 2012 Marc Alexander - marc1706
-*/
-void *alt_led_handle(void *arg) {
-	struct timespec l_wait;
-	l_wait.tv_nsec = 0;
-	l_wait.tv_sec = 2;
-	
-	struct timespec s_wait;
-	s_wait.tv_nsec = 0;
-	s_wait.tv_sec = 1;
-	
-	struct timespec start_wait;
-	start_wait.tv_nsec = 500000000;
-	start_wait.tv_sec = 0;
-	
-	unsigned int cur_led = main_led;
-	int i = 0;
-	const char* main_led_file;
-	const char* alt_led_file;
-	
-	// wait for last thread to finish
-	while (alt_thread_running)
-		nanosleep(&start_wait, NULL);
-		
-	alt_thread_running = 1;
-	alt_thread_check = 1;
-	
-	if (main_led == LED_AMBER) {
-		alt_led = LED_GREEN;
-		main_led_file = (const char*) AMBER_LED_FILE;
-		alt_led_file = (const char*) GREEN_LED_FILE;
-	} else if (main_led == LED_GREEN) {
-		alt_led = LED_AMBER;
-		main_led_file = (const char*) GREEN_LED_FILE;
-		alt_led_file = (const char*) AMBER_LED_FILE;
-	}
-	
-	LOGV("%s: start handle", __func__);
-	
-	while (alt_thread_check) {
-		if (cur_led == main_led) {
-			write_int (main_led_file, 1);
-			write_int (alt_led_file, 0);
-			cur_led = alt_led;
-			nanosleep(&l_wait, NULL);
-		} else if (cur_led == alt_led) {
-			write_int (main_led_file, 0);
-			write_int (alt_led_file, 1);
-			cur_led = main_led;
-			nanosleep(&s_wait, NULL);
-		}
-	}
-	
-	LOGV("%s: done with thread", __func__);
-	
-	alt_thread_running = 0;
-
-	return NULL;
-}
-
-/*
-* start thread for alternating LEDs
-* Copyright (C) 2012 Marc Alexander - marc1706
-*/
-void start_alt_led_thread() {
-	LOGV("%s: start thread", __func__);
-	if (t_alt_led == 0)
-		pthread_create(&t_alt_led, NULL, alt_led_handle, NULL);
-}
-
-static void set_speaker_light_locked_dual (struct light_device_t *dev, struct light_state_t *bstate, struct light_state_t *nstate) {
-
-	unsigned int bcolorRGB = bstate->color & 0xFFFFFF;
-	unsigned int bcolor = LED_BLANK;
-
-	if ((bcolorRGB >> 8)&0xFF) bcolor = LED_GREEN;
-	if ((bcolorRGB >> 16)&0xFF) bcolor = LED_AMBER;
-
-	if (bcolor == LED_AMBER) {
-		main_led = LED_AMBER;
-		write_int (AMBER_LED_FILE, 1);
-		write_int (GREEN_LED_FILE, 0);
-	} else if (bcolor == LED_GREEN) {
-		main_led = LED_GREEN;
-		write_int (AMBER_LED_FILE, 0);
-		write_int (GREEN_LED_FILE, 1);
-	} else {
-		LOGE("set_led_state (dual) unexpected color: bcolorRGB=%08x\n", bcolorRGB);
-	}
-
-	start_alt_led_thread();
-}
-
-/*
 * check battery level and change LED if necessary
 * Copyright (C) 2012 Marc Alexander - marc1706
 *
@@ -300,28 +202,56 @@ static int check_battery_level(int ret) {
 	battery_state = 0;
 	battery_state = sprintf(str, "%s", str);
 	
-	if (battery_state != last_battery_state &&
-		!(is_lit (&g_battery) && is_lit (&g_notification))) {
+	if (last_battery_state != BATT_CHARGING && last_battery_state != BATT_FULL) {
+		last_battery_state = BATT_NONE;
+		LOGE("%s: Incorrect last battery_state! Resetting last battery state!",
+			__func__);
+	}
+	
+	if (battery_state != BATT_CHARGING && battery_state != BATT_FULL)
+		LOGE("%s: Incorrect battery_state!", __func__);
+	
+	// did the battery state change?
+	if (battery_state != last_battery_state) {
 		last_battery_state = battery_state;
-		
-		if (battery_state == 9) {
-			// Charging
-			write_int (AMBER_LED_FILE, 1);
-			write_int (GREEN_LED_FILE, 0);
-			if (ret)
-				ret = 1;
-		} else if (battery_state == 5) {
-			// Full
-			write_int (AMBER_LED_FILE, 0);
-			write_int (GREEN_LED_FILE, 1);
-			// cancel thread if we reached full level
-			battery_thread_check = 0;
-			if (ret)
-				ret = 0;
+
+		// battery & notification led should show
+		if (is_lit (&g_battery) && is_lit (&g_notification)) {
+			if (battery_state == BATT_CHARGING) {
+				// Charging -- fast blink amber
+				write_int (AMBER_BLINK_FILE, 2);
+				write_int (GREEN_LED_FILE, 0);
+				if (ret)
+					ret = 1;
+			} else {
+				// Charging -- fast blink green
+				write_int (AMBER_LED_FILE, 0);
+				write_int (GREEN_BLINK_FILE, 3);
+				// cancel thread if we reached full level
+				battery_thread_check = 0;
+				if (ret)
+					ret = 1;
+			}
+		} else if (!(is_lit (&g_battery) && is_lit (&g_notification))) {
+			if (battery_state == BATT_CHARGING) {
+				// Charging
+				write_int (AMBER_LED_FILE, 1);
+				write_int (GREEN_LED_FILE, 0);
+				if (ret)
+					ret = 1;
+			} else if (battery_state == BATT_FULL) {
+				// Full
+				write_int (AMBER_LED_FILE, 0);
+				write_int (GREEN_LED_FILE, 1);
+				// cancel thread if we reached full level
+				battery_thread_check = 0;
+				if (ret)
+					ret = 0;
+			}
 		}
-		LOGV("%s: state=%s", __func__, battery_state);
+		LOGI("%s: state=%u", __func__, battery_state);
 	} else if (ret) {
-		if (battery_state == 9)
+		if (battery_state == BATT_CHARGING)
 			ret = 1;
 		else
 			ret = 0;
@@ -371,13 +301,35 @@ void start_battery_thread() {
 		pthread_create(&t_battery_checker, NULL, battery_level_check, NULL);
 }
 
+static void set_speaker_light_locked_dual (struct light_device_t *dev, struct light_state_t *bstate, struct light_state_t *nstate) {
+
+	unsigned int bcolorRGB = bstate->color & 0xFFFFFF;
+	unsigned int bcolor = LED_BLANK;
+	int is_charging = check_battery_level(1);
+
+	if ((bcolorRGB >> 8)&0xFF) bcolor = LED_GREEN;
+	if ((bcolorRGB >> 16)&0xFF) bcolor = LED_AMBER;
+	
+	if (bcolor == LED_GREEN && is_charging) {
+		write_int (AMBER_BLINK_FILE, 2);
+		write_int (GREEN_LED_FILE, 0);
+		start_battery_thread();
+	} else if (bcolor == LED_AMBER) {
+		write_int (AMBER_BLINK_FILE, 2);
+		write_int (GREEN_LED_FILE, 0);
+	} else if (bcolor == LED_GREEN) {
+		write_int (AMBER_LED_FILE, 0);
+		write_int (GREEN_BLINK_FILE, 3);
+	} else {
+		LOGE("set_led_state (dual) unexpected color: bcolorRGB=%08x\n", bcolorRGB);
+	}
+}
+
 static void handle_speaker_battery_locked (struct light_device_t *dev) {
 	unsigned int colorRGB = g_battery.color & 0xFFFFFF;
 	int ret = 0;
 	
 	// reset threads first
-	t_alt_led = 0;
-	alt_thread_check = 0;
 	t_battery_checker = 0;
 	battery_thread_check = 0;
 
