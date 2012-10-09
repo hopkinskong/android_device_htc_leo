@@ -9,7 +9,7 @@ $(call inherit-product, vendor/cm/config/gsm.mk)
 
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_MODEL := HTC HD2
+PRODUCT_MODEL := HD2
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_BRAND := htc
 PRODUCT_DEVICE := leo
