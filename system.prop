@@ -1,8 +1,75 @@
+#
+# system.prop for leo
+#
+
+ro.sf.lcd_density=240
+
+# RIL
 rild.libpath=/system/lib/libhtc_ril_wrapper.so
 rild.libargs=-d /dev/smd0
+mobiledata.interfaces=rmnet0,rmnet1,rmnet2,ppp0
+ro.telephony.default_network=0
 com.qc.hardware=true
+ro.ril.ecc.HTC-ELL=92,93,94
+ro.ril.ecc.HTC-WWE=999
+ro.ril.enable.a52.HTC-ITA=1
+ro.ril.enable.a53.HTC-ITA=1
+ro.ril.enable.a52=0
+ro.ril.enable.a53=1
+ro.ril.enable.dtm=1
+ro.ril.gprsclass=12
+ro.ril.hsdpa.category=8
+ro.ril.hsupa.category=5
+ro.ril.hsxpa=2
+ro.ril.enable.prl.recognition=1
+ro.telephony.ril.v3=signalstrength
+ro.ril.def.agps.mode=2
+ro.ril.enable.managed.roaming=1
+ro.ril.oem.nosim.ecclist=911,112,999,000,08,118,120,122,110,119,995
+ro.ril.emc.mode=2
 
-# SOFTBUTTONS
-# uncomment below prop to enable softbuttons
+# Wi-Fi
+wifi.interface=wlan0
+ro.ril.disable.power.collapse=0
+wifi.supplicant_scan_interval=60
 
-#qemu.hw.mainkeys=0
+# Audio
+media.a1026.nsForVoiceRec=0
+media.a1026.enableA1026=1
+
+# Camera
+ro.media.dec.jpeg.memcap=20000000
+
+# EGL
+ro.opengles.version=131072
+Debug.performance.tuning=1
+Video.accelerate.hw=1
+debug.sf.hw=1
+debug.composition.type=mdp
+windowsmgr.max_events_per_sec=120
+hwui.render_dirty_regions=false
+hwui.disable_vsync=true
+hwui.print_config=choice
+
+# Misc.
+ro.lge.proximity.delay=10
+mot.proximity.delay=10
+
+# Dalvik
+dalvik.vm.heapsize=128m
+dalvik.vm.heapgrowthlimit=48m
+dalvik.vm.heapstartsize=5m
+dalvik.vm.dexopt-data-only=1
+dalvik.vm.verify-bytecode=false
+
+# Memory
+ro.HOME_APP_ADJ=1
+ro.PERCEPTIBLE_APP_ADJ=0
+
+# JNI
+ro.kernel.android.checkjni=0
+dalvik.vm.checkjni=0
+
+# USB
+persist.sys.usb.config=mass_storage,adb
+persist.service.adb.enable=1

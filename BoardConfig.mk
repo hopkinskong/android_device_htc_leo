@@ -95,9 +95,6 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 3200
 # SSL
 BOARD_USE_OPENSSL_ENGINE := true
 
-# Custom Release Tools
-TARGET_CUSTOM_RELEASETOOL := device/htc/leo/releasetools/squisher
-
 # # cat /proc/mtd
 # dev:    size   erasesize  name
 #mtd0: 00100000 00020000 "misc"
