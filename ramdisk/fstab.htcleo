@@ -1,0 +1,5 @@
+# Android fstab file.
+#<src>			<mnt_point>	<type>	<mnt_flags>
+
+mtd@system              /system         yaffs2  remount,noatime,nodiratime
+mtd@userdata            /data           yaffs2  remount,nosuid,nodev,noatime,nodiratime

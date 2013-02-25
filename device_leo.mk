@@ -56,6 +56,7 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
+	device/htc/leo/ramdisk/fstab.htcleo:root/fstab.htcleo \
 	device/htc/leo/ramdisk/init.htcleo.rc:root/init.htcleo.rc \
 	device/htc/leo/ramdisk/init.htcleo.usb.rc:root/init.htcleo.usb.rc \
 	device/htc/leo/ramdisk/ueventd.htcleo.rc:root/ueventd.htcleo.rc \
@@ -70,10 +71,10 @@ PRODUCT_COPY_FILES += \
 
 # PPP files
 PRODUCT_COPY_FILES += \
-	device/htc/leo/prebuilt/ppp/ip-up:system/etc/ppp/ip-up \
-	device/htc/leo/prebuilt/ppp/ip-down:system/etc/ppp/ip-down \
-	device/htc/leo/prebuilt/ppp/ppp:system/ppp \
-	device/htc/leo/prebuilt/ppp/options:system/etc/ppp/options
+	device/htc/leo/ppp/ip-up:system/etc/ppp/ip-up \
+	device/htc/leo/ppp/ip-down:system/etc/ppp/ip-down \
+	device/htc/leo/ppp/ppp:system/ppp \
+	device/htc/leo/ppp/options:system/etc/ppp/options
 
 # Scripts
 PRODUCT_COPY_FILES += \
@@ -89,6 +90,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
      device/htc/leo/configs/gps.conf:system/etc/gps.conf
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
+
+# Modules
+ifeq ($(USING_PREBUILT_KERNEL),)
+PRODUCT_COPY_FILES += $(shell \
+    find device/htc/leo/modules -name '*.ko' \
+    | sed -r 's/^\/?(.*\/)([^/ ]+)$$/\1\2:system\/lib\/modules\/\2/' \
+    | tr '\n' ' ')
+endif
 
 # Permissions
 PRODUCT_COPY_FILES += \
