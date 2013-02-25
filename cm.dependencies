@@ -1,7 +1,7 @@
 [
  {
-   "repository": "android_kernel_cmhtcleo",
-   "target_path": "kernel/htc/leo",
-   "branch": "ics"
+   "repository": "android_device_htc_qsd8k-common",
+   "target_path": "device/htc/qsd8k-common",
+   "branch": "cm-10.1"
  }
 ]
