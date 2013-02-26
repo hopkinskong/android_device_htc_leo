@@ -80,7 +80,7 @@ static int write_int (const char* path, int value) {
 	fd = open(path, O_RDWR);
 	if (fd < 0) {
 		if (already_warned == 0) {
-			LOGE("write_int failed to open %s\n", path);
+			ALOGE("write_int failed to open %s\n", path);
 			already_warned = 1;
 		}
 		return -errno;
@@ -150,7 +150,7 @@ static void set_speaker_light_locked (struct light_device_t *dev, struct light_s
 					write_int (GREEN_BLINK_FILE, 0);
 					break;
 				default:
-					LOGE("set_led_state colorRGB=%08X, unknown color\n",
+					ALOGE("set_led_state colorRGB=%08X, unknown color\n",
 							colorRGB);
 					break;
 			}
@@ -177,7 +177,7 @@ static void set_speaker_light_locked (struct light_device_t *dev, struct light_s
 			}
 			break;
 		default:
-			LOGE("set_led_state colorRGB=%08X, unknown mode %d\n",
+			ALOGE("set_led_state colorRGB=%08X, unknown mode %d\n",
 					colorRGB, state->flashMode);
 	}
 
@@ -204,12 +204,12 @@ static int check_battery_level(int ret) {
 	
 	if (last_battery_state != BATT_CHARGING && last_battery_state != BATT_FULL) {
 		last_battery_state = BATT_NONE;
-		LOGE("%s: Incorrect last battery_state! Resetting last battery state!",
+		ALOGE("%s: Incorrect last battery_state! Resetting last battery state!",
 			__func__);
 	}
 	
 	if (battery_state != BATT_CHARGING && battery_state != BATT_FULL)
-		LOGE("%s: Incorrect battery_state!", __func__);
+		ALOGE("%s: Incorrect battery_state!", __func__);
 	
 	// did the battery state change?
 	if (battery_state != last_battery_state) {
@@ -249,7 +249,7 @@ static int check_battery_level(int ret) {
 					ret = 0;
 			}
 		}
-		LOGI("%s: state=%u", __func__, battery_state);
+		ALOGI("%s: state=%u", __func__, battery_state);
 	} else if (ret) {
 		if (battery_state == BATT_CHARGING)
 			ret = 1;
@@ -285,7 +285,7 @@ void *battery_level_check(void *arg) {
 		nanosleep(&wait, NULL);
 	}
 	
-	LOGI("%s: done with thread", __func__);
+	ALOGI("%s: done with thread", __func__);
 	battery_thread_running = 0;
 	
 	return NULL;
@@ -296,7 +296,7 @@ void *battery_level_check(void *arg) {
 * Copyright (C) 2012 Marc Alexander - marc1706
 */
 void start_battery_thread() {
-	LOGI("%s: start thread", __func__);
+	ALOGI("%s: start thread", __func__);
 	if (t_battery_checker == 0)
 		pthread_create(&t_battery_checker, NULL, battery_level_check, NULL);
 }
@@ -321,7 +321,7 @@ static void set_speaker_light_locked_dual (struct light_device_t *dev, struct li
 		write_int (AMBER_LED_FILE, 0);
 		write_int (GREEN_BLINK_FILE, 3);
 	} else {
-		LOGE("set_led_state (dual) unexpected color: bcolorRGB=%08x\n", bcolorRGB);
+		ALOGE("set_led_state (dual) unexpected color: bcolorRGB=%08x\n", bcolorRGB);
 	}
 }
 
@@ -344,13 +344,13 @@ static void handle_speaker_battery_locked (struct light_device_t *dev) {
 				start_battery_thread();
 			}
 				
-			LOGV("%s: changing color from LED_GREEN to LED_AMBER", __func__);
+			ALOGV("%s: changing color from LED_GREEN to LED_AMBER", __func__);
 		}
 		set_speaker_light_locked (dev, &g_battery);
 	} else {
 		set_speaker_light_locked (dev, &g_notification);
 	}
-	LOGV("%s: g_battery=%d , g_notification=%d", __func__, is_lit (&g_battery),
+	ALOGV("%s: g_battery=%d , g_notification=%d", __func__, is_lit (&g_battery),
 		is_lit (&g_notification));
 }
 
@@ -376,7 +376,7 @@ static int set_light_backlight(struct light_device_t* dev,
 		struct light_state_t const* state) {
 	int err = 0;
 	int brightness = rgb_to_brightness(state);
-	LOGV("%s: brightness=%d color=0x%08x",
+	ALOGV("%s: brightness=%d color=0x%08x",
 		__func__,brightness, state->color);
 	pthread_mutex_lock(&g_lock);
 	g_backlight = brightness;
@@ -472,10 +472,10 @@ static struct hw_module_methods_t lights_module_methods = {
 /*
  * The lights Module
  */
-const struct hw_module_t HAL_MODULE_INFO_SYM = {
+struct hw_module_t HAL_MODULE_INFO_SYM = {
 	.tag = HARDWARE_MODULE_TAG,
 	.version_major = 1,
-	.version_minor = 0,
+	.version_minor = 1,
 	.id = LIGHTS_HARDWARE_MODULE_ID,
 	.name = "HTC leo lights module",
 	.author = "Marc Alexander",

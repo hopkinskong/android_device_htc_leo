@@ -1,8 +1,7 @@
-# Copyright 2006 The Android Open Source Project
-
-# XXX using libutils for simulator build only...
-#
 LOCAL_PATH:= $(call my-dir)
+
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),htcleo)
+
 include $(CLEAR_VARS)
 
 LOCAL_MODULE_TAGS := optional
@@ -32,6 +31,8 @@ else
   #build executable
   LOCAL_SHARED_LIBRARIES += \
        libril libdl
-  LOCAL_MODULE:= leo-reference-ril
+  LOCAL_MODULE:= libreferenceril-leo
   include $(BUILD_EXECUTABLE)
 endif
+
+endif # TARGET_BOOTLOADER_NAME

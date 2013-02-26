@@ -52,7 +52,7 @@ PRODUCT_PACKAGES += \
 
 # Reference RIL
 PRODUCT_PACKAGES += \
-	leo-reference-ril
+	libreferenceril-leo
 
 # Ramdisk
 PRODUCT_COPY_FILES += \

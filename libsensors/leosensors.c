@@ -222,15 +222,15 @@ static int open_inputs(int mode, int *akm_fd, int *p_fd, int *l_fd)
                 name[0] = '\0';
             }
             if (!strcmp(name, "compass")) {
-                LOGV("using %s (name=%s)", devname, name);
+                ALOGV("using %s (name=%s)", devname, name);
                 *akm_fd = fd;
             }
             else if (!strcmp(name, "proximity")) {
-                LOGV("using %s (name=%s)", devname, name);
+                ALOGV("using %s (name=%s)", devname, name);
                 *p_fd = fd;
             }
             else if (!strcmp(name, "lightsensor-level")) {
-                LOGV("using %s (name=%s)", devname, name);
+                ALOGV("using %s (name=%s)", devname, name);
                 *l_fd = fd;
             }
             else
@@ -241,15 +241,15 @@ static int open_inputs(int mode, int *akm_fd, int *p_fd, int *l_fd)
 
     fd = 0;
     if (*akm_fd < 0) {
-        LOGE("Couldn't find or open 'compass' driver (%s)", strerror(errno));
+        ALOGE("Couldn't find or open 'compass' driver (%s)", strerror(errno));
         fd = -1;
     }
     if (*p_fd < 0) {
-        LOGE("Couldn't find or open 'proximity' driver (%s)", strerror(errno));
+        ALOGE("Couldn't find or open 'proximity' driver (%s)", strerror(errno));
         fd = -1;
     }
     if (*l_fd < 0) {
-        LOGE("Couldn't find or open 'light' driver (%s)", strerror(errno));
+        ALOGE("Couldn't find or open 'light' driver (%s)", strerror(errno));
         fd = -1;
     }
     return fd;
@@ -259,8 +259,8 @@ static int open_akm(struct sensors_control_context_t* dev)
 {
     if (dev->akmd_fd < 0) {
         dev->akmd_fd = open(AKM_DEVICE_NAME, O_RDONLY);
-        LOGV("%s, fd=%d", __PRETTY_FUNCTION__, dev->akmd_fd);
-        LOGE_IF(dev->akmd_fd<0, "Couldn't open %s (%s)",
+        ALOGV("%s, fd=%d", __PRETTY_FUNCTION__, dev->akmd_fd);
+        ALOGE_IF(dev->akmd_fd<0, "Couldn't open %s (%s)",
                 AKM_DEVICE_NAME, strerror(errno));
         if (dev->akmd_fd >= 0) {
             dev->active_sensors &= ~SENSORS_AKM_GROUP;
@@ -272,7 +272,7 @@ static int open_akm(struct sensors_control_context_t* dev)
 static void close_akm(struct sensors_control_context_t* dev)
 {
     if (dev->akmd_fd >= 0) {
-        LOGV("%s, fd=%d", __PRETTY_FUNCTION__, dev->akmd_fd);
+        ALOGV("%s, fd=%d", __PRETTY_FUNCTION__, dev->akmd_fd);
         close(dev->akmd_fd);
         dev->akmd_fd = -1;
     }
@@ -312,38 +312,38 @@ static uint32_t enable_disable_akm(struct sensors_control_context_t *dev,
     if (fd < 0)
         return 0;
 
-    LOGV("(before) akm sensors = %08x, real = %08x",
+    ALOGV("(before) akm sensors = %08x, real = %08x",
          sensors, read_akm_sensors_state(fd));
 
     short flags;
     if (mask & SENSORS_AKM_ORIENTATION) {
         flags = (sensors & SENSORS_AKM_ORIENTATION) ? 1 : 0;
         if (ioctl(fd, ECS_IOCTL_APP_SET_MFLAG, &flags) < 0) {
-            LOGE("ECS_IOCTL_APP_SET_MFLAG error (%s)", strerror(errno));
+            ALOGE("ECS_IOCTL_APP_SET_MFLAG error (%s)", strerror(errno));
         }
     }
     if (mask & SENSORS_AKM_ACCELERATION) {
         flags = (sensors & SENSORS_AKM_ACCELERATION) ? 1 : 0;
         if (ioctl(fd, ECS_IOCTL_APP_SET_AFLAG, &flags) < 0) {
-            LOGE("ECS_IOCTL_APP_SET_AFLAG error (%s)", strerror(errno));
+            ALOGE("ECS_IOCTL_APP_SET_AFLAG error (%s)", strerror(errno));
         }
     }
     if (mask & SENSORS_AKM_TEMPERATURE) {
         flags = (sensors & SENSORS_AKM_TEMPERATURE) ? 1 : 0;
         if (ioctl(fd, ECS_IOCTL_APP_SET_TFLAG, &flags) < 0) {
-            LOGE("ECS_IOCTL_APP_SET_TFLAG error (%s)", strerror(errno));
+            ALOGE("ECS_IOCTL_APP_SET_TFLAG error (%s)", strerror(errno));
         }
     }
     if (mask & SENSORS_AKM_MAGNETIC_FIELD) {
         flags = (sensors & SENSORS_AKM_MAGNETIC_FIELD) ? 1 : 0;
         if (ioctl(fd, ECS_IOCTL_APP_SET_MVFLAG, &flags) < 0) {
-            LOGE("ECS_IOCTL_APP_SET_MVFLAG error (%s)", strerror(errno));
+            ALOGE("ECS_IOCTL_APP_SET_MVFLAG error (%s)", strerror(errno));
         }
     }
 
     now_active_akm_sensors = read_akm_sensors_state(fd);
 
-    LOGV("(after) akm sensors = %08x, real = %08x",
+    ALOGV("(after) akm sensors = %08x, real = %08x",
          sensors, now_active_akm_sensors);
 
     if (!sensors)
@@ -369,8 +369,8 @@ static int open_cm(struct sensors_control_context_t* dev)
 {
     if (dev->cmd_fd < 0) {
         dev->cmd_fd = open(CM_DEVICE_NAME, O_RDONLY);
-        LOGV("%s, fd=%d", __PRETTY_FUNCTION__, dev->cmd_fd);
-        LOGE_IF(dev->cmd_fd<0, "Couldn't open %s (%s)",
+        ALOGV("%s, fd=%d", __PRETTY_FUNCTION__, dev->cmd_fd);
+        ALOGE_IF(dev->cmd_fd<0, "Couldn't open %s (%s)",
                 CM_DEVICE_NAME, strerror(errno));
         if (dev->cmd_fd >= 0) {
             dev->active_sensors &= ~SENSORS_CM_GROUP;
@@ -382,7 +382,7 @@ static int open_cm(struct sensors_control_context_t* dev)
 static void close_cm(struct sensors_control_context_t* dev)
 {
     if (dev->cmd_fd >= 0) {
-        LOGV("%s, fd=%d", __PRETTY_FUNCTION__, dev->cmd_fd);
+        ALOGV("%s, fd=%d", __PRETTY_FUNCTION__, dev->cmd_fd);
         close(dev->cmd_fd);
         dev->cmd_fd = -1;
     }
@@ -396,23 +396,23 @@ static int enable_disable_cm(struct sensors_control_context_t *dev,
     int fd = open_cm(dev);
 
     if (fd < 0) {
-        LOGE("Couldn't open %s (%s)", CM_DEVICE_NAME, strerror(errno));
+        ALOGE("Couldn't open %s (%s)", CM_DEVICE_NAME, strerror(errno));
         return 0;
     }
 
-    LOGV("(before) cm sensors = %08x, real = %08x",
+    ALOGV("(before) cm sensors = %08x, real = %08x",
          sensors, read_cm_sensors_state(fd));
 
     if (mask & SENSORS_CM_PROXIMITY) {
         int flags = (sensors & SENSORS_CM_PROXIMITY) ? 1 : 0;
         rc = ioctl(fd, CAPELLA_CM3602_IOCTL_ENABLE, &flags);
         if (rc < 0)
-            LOGE("CAPELLA_CM3602_IOCTL_ENABLE error (%s)", strerror(errno));
+            ALOGE("CAPELLA_CM3602_IOCTL_ENABLE error (%s)", strerror(errno));
     }
 
     now_active_cm_sensors = read_cm_sensors_state(fd);
 
-    LOGV("(after) cm sensors = %08x, real = %08x",
+    ALOGV("(after) cm sensors = %08x, real = %08x",
          sensors, now_active_cm_sensors);
 
     return now_active_cm_sensors;
@@ -435,8 +435,8 @@ static int open_ls(struct sensors_control_context_t* dev)
 {
     if (dev->lsd_fd < 0) {
         dev->lsd_fd = open(LS_DEVICE_NAME, O_RDONLY);
-        LOGV("%s, fd=%d", __PRETTY_FUNCTION__, dev->lsd_fd);
-        LOGE_IF(dev->lsd_fd<0, "Couldn't open %s (%s)",
+        ALOGV("%s, fd=%d", __PRETTY_FUNCTION__, dev->lsd_fd);
+        ALOGE_IF(dev->lsd_fd<0, "Couldn't open %s (%s)",
                 LS_DEVICE_NAME, strerror(errno));
         if (dev->lsd_fd >= 0) {
             dev->active_sensors &= ~SENSORS_LIGHT_GROUP;
@@ -448,7 +448,7 @@ static int open_ls(struct sensors_control_context_t* dev)
 static void close_ls(struct sensors_control_context_t* dev)
 {
     if (dev->lsd_fd >= 0) {
-        LOGV("%s, fd=%d", __PRETTY_FUNCTION__, dev->lsd_fd);
+        ALOGV("%s, fd=%d", __PRETTY_FUNCTION__, dev->lsd_fd);
         close(dev->lsd_fd);
         dev->lsd_fd = -1;
     }
@@ -462,23 +462,23 @@ static int enable_disable_ls(struct sensors_control_context_t *dev,
     int fd = open_ls(dev);
 
     if (fd < 0) {
-        LOGE("Couldn't open %s (%s)", LS_DEVICE_NAME, strerror(errno));
+        ALOGE("Couldn't open %s (%s)", LS_DEVICE_NAME, strerror(errno));
         return 0;
     }
 
-    LOGV("(before) ls sensors = %08x, real = %08x",
+    ALOGV("(before) ls sensors = %08x, real = %08x",
          sensors, read_ls_sensors_state(fd));
 
     if (mask & SENSORS_LIGHT) {
         int flags = (sensors & SENSORS_LIGHT) ? 1 : 0;
         rc = ioctl(fd, LIGHTSENSOR_IOCTL_ENABLE, &flags);
         if (rc < 0)
-            LOGE("LIGHTSENSOR_IOCTL_ENABLE error (%s)", strerror(errno));
+            ALOGE("LIGHTSENSOR_IOCTL_ENABLE error (%s)", strerror(errno));
     }
 
     now_active_ls_sensors = read_ls_sensors_state(fd);
 
-    LOGV("(after) ls sensors = %08x, real = %08x",
+    ALOGV("(after) ls sensors = %08x, real = %08x",
          sensors, now_active_ls_sensors);
 
     return now_active_ls_sensors;
@@ -572,17 +572,17 @@ static int control__wake(struct sensors_control_context_t *dev)
     event[0].value = 0;
 
     err = write(akm_fd, event, sizeof(event));
-    LOGV_IF(err<0, "control__wake(compass), fd=%d (%s)",
+    ALOGV_IF(err<0, "control__wake(compass), fd=%d (%s)",
             akm_fd, strerror(errno));
     close(akm_fd);
 
     err = write(p_fd, event, sizeof(event));
-    LOGV_IF(err<0, "control__wake(proximity), fd=%d (%s)",
+    ALOGV_IF(err<0, "control__wake(proximity), fd=%d (%s)",
             p_fd, strerror(errno));
     close(p_fd);
 
     err = write(l_fd, event, sizeof(event));
-    LOGV_IF(err<0, "control__wake(light), fd=%d (%s)",
+    ALOGV_IF(err<0, "control__wake(light), fd=%d (%s)",
             l_fd, strerror(errno));
     close(l_fd);
 
@@ -614,22 +614,22 @@ static int data__data_open(struct sensors_data_context_t *dev, native_handle_t* 
     dev->events_fd[0] = dup(handle->data[0]);
     dev->events_fd[1] = dup(handle->data[1]);
     dev->events_fd[2] = dup(handle->data[2]);
-    LOGV("data__data_open: compass fd = %d", handle->data[0]);
-    LOGV("data__data_open: proximity fd = %d", handle->data[1]);
-    LOGV("data__data_open: light fd = %d", handle->data[2]);
+    ALOGV("data__data_open: compass fd = %d", handle->data[0]);
+    ALOGV("data__data_open: proximity fd = %d", handle->data[1]);
+    ALOGV("data__data_open: light fd = %d", handle->data[2]);
     // Framework will close the handle
     native_handle_delete(handle);
 
     dev->pendingSensors = 0;
     if (!ioctl(dev->events_fd[1], EVIOCGABS(ABS_DISTANCE), &absinfo)) {
-        LOGV("proximity sensor initial value %d\n", absinfo.value);
+        ALOGV("proximity sensor initial value %d\n", absinfo.value);
         dev->pendingSensors |= SENSORS_CM_PROXIMITY;
         // FIXME: we should save here absinfo.{minimum, maximum, etc}
         //        and use them to scale the return value according to
         //        the sensor description.
         dev->sensors[ID_P].distance = (float)absinfo.value;
     }
-    else LOGE("Cannot get proximity sensor initial value: %s\n",
+    else ALOGE("Cannot get proximity sensor initial value: %s\n",
               strerror(errno));
 
     return 0;
@@ -638,17 +638,17 @@ static int data__data_open(struct sensors_data_context_t *dev, native_handle_t* 
 static int data__data_close(struct sensors_data_context_t *dev)
 {
     if (dev->events_fd[0] >= 0) {
-        //LOGV("(data close) about to close compass fd=%d", dev->events_fd[0]);
+        //ALOGV("(data close) about to close compass fd=%d", dev->events_fd[0]);
         close(dev->events_fd[0]);
         dev->events_fd[0] = -1;
     }
     if (dev->events_fd[1] >= 0) {
-        //LOGV("(data close) about to close proximity fd=%d", dev->events_fd[1]);
+        //ALOGV("(data close) about to close proximity fd=%d", dev->events_fd[1]);
         close(dev->events_fd[1]);
         dev->events_fd[1] = -1;
     }
     if (dev->events_fd[2] >= 0) {
-        //LOGV("(data close) about to close light fd=%d", dev->events_fd[1]);
+        //ALOGV("(data close) about to close light fd=%d", dev->events_fd[1]);
         close(dev->events_fd[2]);
         dev->events_fd[2] = -1;
     }
@@ -666,7 +666,7 @@ static int pick_sensor(struct sensors_data_context_t *dev,
             dev->pendingSensors &= ~(1<<i);
             *values = dev->sensors[i];
             values->sensor = id_to_sensor[i];
-            LOGV_IF(0, "%d [%f, %f, %f]",
+            ALOGV_IF(0, "%d [%f, %f, %f]",
                     values->sensor,
                     values->vector.x,
                     values->vector.y,
@@ -675,7 +675,7 @@ static int pick_sensor(struct sensors_data_context_t *dev,
         }
     }
 
-    LOGE("no sensor to return: pendingSensors = %08x", dev->pendingSensors);
+    ALOGE("no sensor to return: pendingSensors = %08x", dev->pendingSensors);
     return -1;
 }
 
@@ -698,7 +698,7 @@ static uint32_t data__poll_process_akm_abs(struct sensors_data_context_t *dev,
 {
     uint32_t new_sensors = 0;
     if (event->type == EV_ABS) {
-        LOGV("compass type: %d code: %d value: %-5d time: %ds",
+        ALOGV("compass type: %d code: %d value: %-5d time: %ds",
              event->type, event->code, event->value,
              (int)event->time.tv_sec);
         switch (event->code) {
@@ -748,12 +748,12 @@ static uint32_t data__poll_process_akm_abs(struct sensors_data_context_t *dev,
             break;
         case EVENT_TYPE_ACCEL_STATUS:
             // accuracy of the calibration (never returned!)
-            //LOGV("G-Sensor status %d", event->value);
+            //ALOGV("G-Sensor status %d", event->value);
             break;
         case EVENT_TYPE_ORIENT_STATUS: {
             // accuracy of the calibration
             uint32_t v = (uint32_t)(event->value & SENSOR_STATE_MASK);
-            LOGV_IF(dev->sensors[ID_O].orientation.status != (uint8_t)v,
+            ALOGV_IF(dev->sensors[ID_O].orientation.status != (uint8_t)v,
                     "M-Sensor status %d", v);
             dev->sensors[ID_O].orientation.status = (uint8_t)v;
         }
@@ -770,7 +770,7 @@ static uint32_t data__poll_process_cm_abs(struct sensors_data_context_t *dev,
 {
     uint32_t new_sensors = 0;
     if (event->type == EV_ABS) {
-        LOGV("proximity type: %d code: %d value: %-5d time: %ds",
+        ALOGV("proximity type: %d code: %d value: %-5d time: %ds",
              event->type, event->code, event->value,
              (int)event->time.tv_sec);
         if (event->code == EVENT_TYPE_PROXIMITY) {
@@ -788,7 +788,7 @@ static uint32_t data__poll_process_ls_abs(struct sensors_data_context_t *dev,
 {
     uint32_t new_sensors = 0;
     if (event->type == EV_ABS) {
-        LOGV("light-level type: %d code: %d value: %-5d time: %ds",
+        ALOGV("light-level type: %d code: %d value: %-5d time: %ds",
              event->type, event->code, event->value,
              (int)event->time.tv_sec);
         if (event->code == EVENT_TYPE_LIGHT) {
@@ -832,23 +832,23 @@ static int data__poll(struct sensors_data_context_t *dev, sensors_data_t* values
     int ls_fd = dev->events_fd[2];
 
     if (akm_fd < 0) {
-        LOGE("invalid compass file descriptor, fd=%d", akm_fd);
+        ALOGE("invalid compass file descriptor, fd=%d", akm_fd);
         return -1;
     }
 
     if (cm_fd < 0) {
-        LOGE("invalid proximity-sensor file descriptor, fd=%d", cm_fd);
+        ALOGE("invalid proximity-sensor file descriptor, fd=%d", cm_fd);
         return -1;
     }
 
     if (ls_fd < 0) {
-        LOGE("invalid light-sensor file descriptor, fd=%d", ls_fd);
+        ALOGE("invalid light-sensor file descriptor, fd=%d", ls_fd);
         return -1;
     }
 
     // there are pending sensors, returns them now...
     if (dev->pendingSensors) {
-        LOGV("pending sensors 0x%08x", dev->pendingSensors);
+        ALOGV("pending sensors 0x%08x", dev->pendingSensors);
         return pick_sensor(dev, values);
     }
 
@@ -870,9 +870,9 @@ static int data__poll(struct sensors_data_context_t *dev, sensors_data_t* values
         FD_SET(ls_fd, &rfds);
         n = select(__MAX(akm_fd, __MAX(cm_fd, ls_fd)) + 1, &rfds,
                    NULL, NULL, NULL);
-        LOGV("return from select: %d\n", n);
+        ALOGV("return from select: %d\n", n);
         if (n < 0) {
-            LOGE("%s: error from select(%d, %d): %s",
+            ALOGE("%s: error from select(%d, %d): %s",
                  __FUNCTION__,
                  akm_fd, cm_fd, strerror(errno));
             return -1;
@@ -882,58 +882,58 @@ static int data__poll(struct sensors_data_context_t *dev, sensors_data_t* values
             nread = read(akm_fd, &event, sizeof(event));
             if (nread == sizeof(event)) {
                 new_sensors |= data__poll_process_akm_abs(dev, akm_fd, &event);
-                LOGV("akm abs %08x", new_sensors);
+                ALOGV("akm abs %08x", new_sensors);
                 got_syn = event.type == EV_SYN;
                 exit = got_syn && event.code == SYN_CONFIG;
                 if (got_syn) {
-                    LOGV("akm syn %08x", new_sensors);
+                    ALOGV("akm syn %08x", new_sensors);
                     data__poll_process_syn(dev, &event, new_sensors);
                     new_sensors = 0;
                 }
             }
-            else LOGE("akm read too small %d", nread);
+            else ALOGE("akm read too small %d", nread);
         }
-        else LOGV("akm fd is not set");
+        else ALOGV("akm fd is not set");
 
         if (FD_ISSET(cm_fd, &rfds)) {
             nread = read(cm_fd, &event, sizeof(event));
             if (nread == sizeof(event)) {
                 new_sensors |= data__poll_process_cm_abs(dev, cm_fd, &event);
-                LOGV("cm abs %08x", new_sensors);
+                ALOGV("cm abs %08x", new_sensors);
                 got_syn |= event.type == EV_SYN;
                 exit |= got_syn && event.code == SYN_CONFIG;
                 if (got_syn) {
-                    LOGV("cm syn %08x", new_sensors);
+                    ALOGV("cm syn %08x", new_sensors);
                     data__poll_process_syn(dev, &event, new_sensors);
                     new_sensors = 0;
                 }
             }
-            else LOGE("cm read too small %d", nread);
+            else ALOGE("cm read too small %d", nread);
         }
-        else LOGV("cm fd is not set");
+        else ALOGV("cm fd is not set");
 
         if (FD_ISSET(ls_fd, &rfds)) {
             nread = read(ls_fd, &event, sizeof(event));
             if (nread == sizeof(event)) {
                 new_sensors |= data__poll_process_ls_abs(dev, ls_fd, &event);
-                LOGV("ls abs %08x", new_sensors);
+                ALOGV("ls abs %08x", new_sensors);
                 got_syn |= event.type == EV_SYN;
                 exit |= got_syn && event.code == SYN_CONFIG;
                 if (got_syn) {
-                    LOGV("ls syn %08x", new_sensors);
+                    ALOGV("ls syn %08x", new_sensors);
                     data__poll_process_syn(dev, &event, new_sensors);
                     new_sensors = 0;
                 }
             }
-            else LOGE("ls read too small %d", nread);
+            else ALOGE("ls read too small %d", nread);
         }
-        else LOGV("ls fd is not set");
+        else ALOGV("ls fd is not set");
 
         if (exit) {
             // we use SYN_CONFIG to signal that we need to exit the
             // main loop.
-            //LOGV("got empty message: value=%d", event->value);
-            LOGV("exit");
+            //ALOGV("got empty message: value=%d", event->value);
+            ALOGV("exit");
             return 0x7FFFFFFF;
         }
 
@@ -944,7 +944,7 @@ static int data__poll(struct sensors_data_context_t *dev, sensors_data_t* values
         */
 
         if (got_syn && dev->pendingSensors) {
-            LOGV("got syn, picking sensor");
+            ALOGV("got syn, picking sensor");
             return pick_sensor(dev, values);
         }
     }
@@ -1031,7 +1031,7 @@ static struct hw_module_methods_t sensors_module_methods = {
     .open = open_sensors
 };
 
-const struct sensors_module_t HAL_MODULE_INFO_SYM = {
+struct sensors_module_t HAL_MODULE_INFO_SYM = {
     .common = {
         .tag = HARDWARE_MODULE_TAG,
         .version_major = 1,
