@@ -50,7 +50,15 @@ BOARD_KERNEL_NEW_PPPOX := true
 TARGET_USES_MDP3 := true
 TARGET_USES_PMEM := true
 
-# Wi-Fi
+# Blank unused Wi-Fi configs
+WIFI_BAND                   :=
+BOARD_HOSTAPD_DRIVER        :=
+BOARD_HOSTAPD_PRIVATE_LIB   :=
+WIFI_DRIVER_FW_PATH_P2P     :=
+WIFI_DRIVER_FW_PATH_PARAM   :=
+BOARD_LEGACY_NL80211_STA_EVENTS := false
+
+# Wi-Fi Configs
 BOARD_WPA_SUPPLICANT_DRIVER := WEXT
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_wext
 WPA_SUPPLICANT_VERSION      := VER_0_8_X
@@ -58,7 +66,7 @@ BOARD_WLAN_DEVICE           := bcm4329
 WIFI_DRIVER_MODULE_PATH     := "/system/lib/modules/bcm4329.ko"
 WIFI_DRIVER_FW_PATH_STA     := "/system/vendor/firmware/fw_bcm4329.bin"
 WIFI_DRIVER_FW_PATH_AP      := "/system/vendor/firmware/fw_bcm4329_apsta.bin"
-WIFI_DRIVER_MODULE_ARG      := "iface_name=wlan firmware_path=/vendor/firmware/fw_bcm4329.bin nvram_path=/proc/calibration"
+WIFI_DRIVER_MODULE_ARG      := "iface_name=wlan0 firmware_path=/system/vendor/firmware/fw_bcm4329.bin nvram_path=/proc/calibration"
 WIFI_DRIVER_MODULE_NAME     := "bcm4329"
 
 # Hacks for legacy mdp drivers
