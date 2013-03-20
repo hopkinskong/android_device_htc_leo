@@ -81,6 +81,9 @@ PRODUCT_COPY_FILES += \
 	device/htc/leo/keylayout/h2w_headset.kl:system/usr/keylayout/h2w_headset.kl \
 	device/htc/leo/keylayout/htcleo-touchscreen.idc:system/usr/idc/htcleo-touchscreen.idc
 
+# Firmware
+$(call inherit-product, hardware/broadcom/wlan/bcm4329/firmware/Android.mk)
+
 # cLK
 PRODUCT_COPY_FILES += \
 	device/htc/leo/clk/default.prop:system/default.prop \
