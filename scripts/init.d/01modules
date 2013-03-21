@@ -9,7 +9,6 @@ else
   echo "Loading RMNET module as /system/ppp doesn't exist"
   insmod /system/lib/modules/msm_rmnet.ko
 fi
-insmod /system/lib/modules/bcm4329.ko
 insmod /system/lib/modules/cifs.ko
 insmod /system/lib/modules/fuse.ko
 insmod /system/lib/modules/kineto_gan.ko
