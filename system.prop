@@ -23,7 +23,6 @@ ro.opengles.version=131072
 
 # USB
 ro.vold.umsdirtyratio=20
-persist.sys.usb.config=mass_storage,adb
 
 # Dalvik
 dalvik.vm.lockprof.threshold=500 
@@ -33,8 +32,4 @@ dalvik.vm.heapsize=128m
 dalvik.vm.heapgrowthlimit=48m
 dalvik.vm.heapstartsize=5m 
 dalvik.vm.dexopt-data-only=1 
-dalvik.vm.verify-bytecode=false 
-
-# SOFTBUTTONS
-# uncomment below prop to enable softbuttons
-#qemu.hw.mainkeys=0
+dalvik.vm.verify-bytecode=false
