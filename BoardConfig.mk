@@ -46,6 +46,13 @@ BOARD_KERNEL_CMDLINE := no_console_suspend=1 wire.search_count=5
 BOARD_KERNEL_BASE := 0x11800000
 BOARD_KERNEL_NEW_PPPOX := true
 
+# Legacy
+TARGET_USES_MDP3 := true
+TARGET_USES_PMEM := true
+
+# Hacks for legacy mdp drivers
+BOARD_ADRENO_AVOID_EXTERNAL_TEXTURE := true
+
 # Blank unused Wi-Fi configs
 #WIFI_BAND                   :=
 #BOARD_HOSTAPD_DRIVER        :=
