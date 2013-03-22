@@ -1,0 +1,1039 @@
+--------- beginning of /dev/log/system
+I/Vold    (  106): Filesystem check completed OK
+I/Vold    (  106): Device /dev/block/vold/179:1, target /storage/sdcard0 mounted @ /mnt/secure/staging
+D/Vold    (  106): Volume sdcard state changing 3 (Checking) -> 4 (Mounted)
+D/MountService(  366): volume state changed for /storage/sdcard0 (checking -> mounted)
+D/MountService(  366): sendStorageIntent Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///storage/sdcard0 (has extras) } to UserHandle{-1}
+E/VoldConnector(  366): NDC Command {3 volume mount /storage/sdcard0} took too long (23297ms)
+E/VoldConnector(  366): NDC Command {4 asec list} took too long (760ms)
+W/PackageManager(  366): Unknown permission android.permission.ADD_SYSTEM_SERVICE in package com.android.phone
+W/PackageManager(  366): Unknown permission com.android.vending.billing.IBillingAccountService.BIND2 in package com.google.android.gsf.login
+W/PackageManager(  366): Unknown permission com.android.chrome.TOS_ACKED in package com.google.android.gsf.login
+W/PackageManager(  366): Unknown permission com.google.android.gallery3d.permission.GALLERY_PROVIDER in package com.android.bluetooth
+W/PackageManager(  366): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.browser (protectionLevel=2 flags=0x89be45)
+W/PackageManager(  366): Unknown permission com.google.android.gallery3d.permission.PICASA_STORE in package com.android.dreams.phototable
+W/PackageManager(  366): Unknown permission android.permission.READ_OWNER_DATA in package com.google.android.setupwizard
+W/PackageManager(  366): Unknown permission android.permission.WRITE_OWNER_DATA in package com.google.android.setupwizard
+W/PackageManager(  366): Unknown permission com.google.android.voicesearch.SHORTCUTS_ACCESS in package com.google.android.googlequicksearchbox
+W/PackageManager(  366): Unknown permission com.google.googlenav.friend.permission.OPT_IN in package com.google.android.googlequicksearchbox
+W/PackageManager(  366): Unknown permission com.google.android.apps.maps.permission.PREFETCH in package com.google.android.googlequicksearchbox
+W/PackageManager(  366): Unknown permission com.google.android.apps.googlevoice.permission.AUTO_SEND in package com.google.android.googlequicksearchbox
+W/PackageManager(  366): Unknown permission com.google.android.gm.permission.AUTO_SEND in package com.google.android.googlequicksearchbox
+W/PackageManager(  366): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.vending (protectionLevel=2 flags=0x8abe45)
+W/PackageManager(  366): Unknown permission com.google.android.gallery3d.permission.GALLERY_PROVIDER in package com.android.exchange
+W/PackageManager(  366): Unknown permission com.google.android.gallery3d.permission.GALLERY_PROVIDER in package com.android.email
+W/PackageManager(  366): Not granting permission android.permission.DEVICE_POWER to package com.android.deskclock (protectionLevel=2 flags=0x88be45)
+W/PackageManager(  366): Not granting permission android.permission.READ_DREAM_STATE to package com.google.android.gsf (protectionLevel=2 flags=0x883e45)
+V/WindowManager(  366): setAppVisibility(Token{40e2a5c0 ActivityRecord{40e899e0 u0 com.android.settings/.wifi.WifiSetupActivity}}, visible=false): mNextAppTransition=8199 hidden=false hiddenRequested=false
+I/ActivityManager(  366): No longer want com.fuss.stats (pid 1044): empty #17
+I/ActivityManager(  366): No longer want com.google.android.youtube (pid 1091): empty #17
+V/WindowManager(  366): setAppVisibility(Token{40e2a5c0 ActivityRecord{40e899e0 u0 com.android.settings/.wifi.WifiSetupActivity}}, visible=false): mNextAppTransition=8199 hidden=false hiddenRequested=true
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=true): mNextAppTransition=8199 hidden=true hiddenRequested=true
+V/WindowManager(  366): Skipping AppWindowToken{41045ab0 token=Token{40e2a5c0 ActivityRecord{40e899e0 u0 com.android.settings/.wifi.WifiSetupActivity}}} -- going to hide
+V/WindowManager(  366): No app is requesting an orientation
+I/ActivityManager(  366): START u0 {cmp=com.google.android.setupwizard/.LocationSharingActivity (has extras)} from pid 749
+V/WindowManager(  366): Skipping set freeze of Token{40eeabc0 ActivityRecord{40d99508 u0 com.google.android.setupwizard/.LocationSharingActivity}}
+V/WindowManager(  366): setAppVisibility(Token{40eeabc0 ActivityRecord{40d99508 u0 com.google.android.setupwizard/.LocationSharingActivity}}, visible=true): mNextAppTransition=4102 hidden=true hiddenRequested=true
+V/WindowManager(  366): Skipping AppWindowToken{41045ab0 token=Token{40e2a5c0 ActivityRecord{40e899e0 u0 com.android.settings/.wifi.WifiSetupActivity}}} -- going to hide
+V/WindowManager(  366): No app is requesting an orientation
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=false): mNextAppTransition=4102 hidden=true hiddenRequested=false
+--------- beginning of /dev/log/main
+D/dalvikvm(  749): GC_FOR_ALLOC freed 6K, 15% free 3859K/4496K, paused 20ms, total 20ms
+I/dalvikvm-heap(  749): Grow heap (frag case) to 4.429MB for 441444-byte allocation
+D/dalvikvm(  749): GC_FOR_ALLOC freed 0K, 13% free 4290K/4928K, paused 27ms, total 27ms
+D/dalvikvm(  749): GC_CONCURRENT freed 632K, 26% free 3687K/4928K, paused 3ms+5ms, total 46ms
+V/NetworkMonitor(  749): GLS onServiceConnected
+V/NetworkMonitor(  749): Network is DOWN, Checkin has NOT succeeded, GLS IS connected
+V/NetworkMonitor(  749): Network is DOWN, Checkin has NOT succeeded, GLS IS connected
+I/WindowStateAnimator(  366): createSurface WindowStateAnimator{4111d1a8 com.google.android.setupwizard/com.google.android.setupwizard.LocationSharingActivity}: mDrawState=DRAW_PENDING
+V/WindowManager(  366): Skipping AppWindowToken{41045ab0 token=Token{40e2a5c0 ActivityRecord{40e899e0 u0 com.android.settings/.wifi.WifiSetupActivity}}} -- going to hide
+V/WindowManager(  366): Skipping AppWindowToken{40d0cf50 token=Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}} -- hidden on top
+V/WindowManager(  366): No app is requesting an orientation
+V/WindowManager(  366): Eval win Window{40ed2ae0 u0 com.google.android.setupwizard/com.google.android.setupwizard.LocationSharingActivity}: isDrawn=false, isAnimating=true
+V/WindowManager(  366): Not displayed: s=Surface(name=com.google.android.setupwizard/com.google.android.setupwizard.LocationSharingActivity, identity=11) pv=true mDrawState=1 ah=false th=false a=false
+V/WindowManager(  366): Resize reasons:  contentInsetsChanged=true visibleInsetsChanged=true surfaceResized=true configChanged=true
+V/WindowManager(  366): Resizing window Window{40ed2ae0 u0 com.google.android.setupwizard/com.google.android.setupwizard.LocationSharingActivity} to 480.0x800.0
+V/WindowManager(  366): Reporting new frame to Window{40ed2ae0 u0 com.google.android.setupwizard/com.google.android.setupwizard.LocationSharingActivity}: Rect(0, 0 - 480, 800)
+I/WindowManager(  366): Sending new config to window Window{40ed2ae0 u0 com.google.android.setupwizard/com.google.android.setupwizard.LocationSharingActivity}: 480.0x800.0 / {1.0 ?mcc?mnc en_US ldltr sw384dp w384dp h615dp 200dpi nrml long port finger -keyb/v/h -nav/h s.6 themeResource=null} / 0x0
+I/WindowManager(  366): Resizing Window{40ed2ae0 u0 com.google.android.setupwizard/com.google.android.setupwizard.LocationSharingActivity} WITH DRAW PENDING
+V/WindowStateAnimator(  366): finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING WindowStateAnimator{4111d1a8 com.google.android.setupwizard/com.google.android.setupwizard.LocationSharingActivity} in Surface(name=com.google.android.setupwizard/com.google.android.setupwizard.LocationSharingActivity, identity=11)
+I/ActivityManager(  366): Start proc com.google.android.youtube for broadcast com.google.android.youtube/.app.prefetch.PrefetchService$DeviceStateReceiver: pid=1483 uid=10022 gids={50022, 3003, 1015, 1006, 1028}
+V/WindowManager(  366): Eval win Window{40ed2ae0 u0 com.google.android.setupwizard/com.google.android.setupwizard.LocationSharingActivity}: isDrawn=true, isAnimating=true
+V/WindowManager(  366): tokenMayBeDrawn: AppWindowToken{411875f0 token=Token{40eeabc0 ActivityRecord{40d99508 u0 com.google.android.setupwizard/.LocationSharingActivity}}} freezingScreen=false mAppFreezing=false
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#113 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+I/WindowManager(  366):   SURFACE SHOW (performShowLocked): Window{40ed2ae0 u0 com.google.android.setupwizard/com.google.android.setupwizard.LocationSharingActivity}
+V/WindowManager(  366): Skipping AppWindowToken{41045ab0 token=Token{40e2a5c0 ActivityRecord{40e899e0 u0 com.android.settings/.wifi.WifiSetupActivity}}} -- hidden on top
+V/WindowManager(  366): Skipping AppWindowToken{40d0cf50 token=Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}} -- hidden on top
+V/WindowManager(  366): No app is requesting an orientation
+I/ActivityManager(  366): Displayed com.google.android.setupwizard/.LocationSharingActivity: +813ms
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(48.0, 80.0, 528.0, 880.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#113 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(32.340347, 53.900574, 512.34033, 853.9006)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#113 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+V/WindowManager(  366): Skipping AppWindowToken{41045ab0 token=Token{40e2a5c0 ActivityRecord{40e899e0 u0 com.android.settings/.wifi.WifiSetupActivity}}} -- hidden on top
+V/WindowManager(  366): Skipping AppWindowToken{40d0cf50 token=Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}} -- hidden on top
+V/WindowManager(  366): No app is requesting an orientation
+E/Trace   ( 1483): error opening trace file: No such file or directory (2)
+D/dalvikvm( 1283): GC_CONCURRENT freed 303K, 20% free 2317K/2868K, paused 3ms+19ms, total 48ms
+D/dalvikvm( 1311): GC_CONCURRENT freed 213K, 17% free 2406K/2868K, paused 5ms+2ms, total 66ms
+I/Email   ( 1311): Onetime initialization: completed.
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#113 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+I/ActivityManager(  366): No longer want com.google.android.voicesearch (pid 1158): empty #17
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#113 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=false): mNextAppTransition=-1 hidden=true hiddenRequested=true
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#113 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+D/dalvikvm(  366): GC_CONCURRENT freed 713K, 29% free 5494K/7696K, paused 6ms+6ms, total 81ms
+E/SQLiteLog(  862): (1) no such table: files
+I/ContactsProviderV1(  775): Bootstrapping database legacy support
+W/ActivityManager(  366): Unable to start service Intent { cmp=com.android.email/.service.AttachmentDownloadService } U=0: not found
+W/ActivityManager(  366): Unable to start service Intent { cmp=com.android.email/.service.AttachmentDownloadService } U=0: not found
+W/ActivityManager(  366): Unable to start service Intent { cmp=com.android.email/.service.AttachmentDownloadService } U=0: not found
+D/dalvikvm( 1483): GC_CONCURRENT freed 285K, 19% free 2367K/2900K, paused 10ms+13ms, total 65ms
+D/dalvikvm( 1483): GC_CONCURRENT freed 233K, 16% free 2564K/3044K, paused 9ms+7ms, total 34ms
+W/CursorWrapperInner( 1483): Cursor finalized without prior close()
+W/CursorWrapperInner( 1483): Cursor finalized without prior close()
+D/ExchangeService( 1298): !!! EAS ExchangeService, onStartCommand, startingUp = true, running = false
+I/ActivityManager(  366): No longer want com.google.android.onetimeinitializer (pid 1180): empty #17
+V/WindowManager(  366): setAppVisibility(Token{40eeabc0 ActivityRecord{40d99508 u0 com.google.android.setupwizard/.LocationSharingActivity}}, visible=false): mNextAppTransition=8199 hidden=false hiddenRequested=false
+V/WindowManager(  366): setAppVisibility(Token{40eeabc0 ActivityRecord{40d99508 u0 com.google.android.setupwizard/.LocationSharingActivity}}, visible=false): mNextAppTransition=8199 hidden=false hiddenRequested=true
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=true): mNextAppTransition=8199 hidden=true hiddenRequested=true
+V/WindowManager(  366): Skipping AppWindowToken{411875f0 token=Token{40eeabc0 ActivityRecord{40d99508 u0 com.google.android.setupwizard/.LocationSharingActivity}}} -- going to hide
+V/WindowManager(  366): No app is requesting an orientation
+I/SetupWizard(  749): onActivityResult(10005, -1) lastActivity=10005
+I/SetupWizard(  749): starting activity 10018
+I/ActivityManager(  366): START u0 {cmp=com.google.android.setupwizard/.DateTimeSetupActivity (has extras)} from pid 749
+V/WindowManager(  366): Skipping set freeze of Token{40da5f90 ActivityRecord{40d86058 u0 com.google.android.setupwizard/.DateTimeSetupActivity}}
+V/WindowManager(  366): setAppVisibility(Token{40da5f90 ActivityRecord{40d86058 u0 com.google.android.setupwizard/.DateTimeSetupActivity}}, visible=true): mNextAppTransition=4102 hidden=true hiddenRequested=true
+V/WindowManager(  366): Skipping AppWindowToken{411875f0 token=Token{40eeabc0 ActivityRecord{40d99508 u0 com.google.android.setupwizard/.LocationSharingActivity}}} -- going to hide
+V/WindowManager(  366): No app is requesting an orientation
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=false): mNextAppTransition=4102 hidden=true hiddenRequested=false
+V/NetworkMonitor(  749): Starting NetworkMonitor
+D/MediaScannerReceiver(  862): action: android.intent.action.MEDIA_MOUNTED path: /storage/sdcard0
+D/SetupWizard(  749): BaseActivity.onCreate() mIsFirstRun=true mAllNetworkSetupSkipped=true mIsSecondaryUser=false
+D/BluetoothAdapter(  706): 1088707992: getState() :  mService = null. Returning STATE_OFF
+D/dalvikvm(  749): GC_CONCURRENT freed 863K, 35% free 3245K/4928K, paused 4ms+2ms, total 48ms
+I/ActivityManager(  366): No longer want com.google.android.tts (pid 905): empty #17
+I/System  (  749): Loaded time zone names for  in 391ms (382ms in ICU)
+I/System  (  749): Loaded time zone names for en_US in 210ms (179ms in ICU)
+D/dalvikvm(  749): GC_CONCURRENT freed 269K, 31% free 3425K/4928K, paused 10ms+10ms, total 66ms
+D/dalvikvm(  964): GC_CONCURRENT freed 241K, 18% free 2389K/2880K, paused 15ms+2ms, total 369ms
+I/ActivityManager(  366): No longer want com.android.launcher (pid 1220): empty #17
+I/dalvikvm(  366): Jit: resizing JitTable from 4096 to 8192
+V/NetworkMonitor(  749): GLS onServiceConnected
+V/NetworkMonitor(  749): Network is DOWN, Checkin has NOT succeeded, GLS IS connected
+V/NetworkMonitor(  749): Network is DOWN, Checkin has NOT succeeded, GLS IS connected
+I/WindowStateAnimator(  366): createSurface WindowStateAnimator{40ed8a20 com.google.android.setupwizard/com.google.android.setupwizard.DateTimeSetupActivity}: mDrawState=DRAW_PENDING
+V/WindowManager(  366): Skipping AppWindowToken{411875f0 token=Token{40eeabc0 ActivityRecord{40d99508 u0 com.google.android.setupwizard/.LocationSharingActivity}}} -- going to hide
+V/WindowManager(  366): Skipping AppWindowToken{40d0cf50 token=Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}} -- hidden on top
+V/WindowManager(  366): No app is requesting an orientation
+V/WindowManager(  366): Eval win Window{40d759e0 u0 com.google.android.setupwizard/com.google.android.setupwizard.DateTimeSetupActivity}: isDrawn=false, isAnimating=true
+V/WindowManager(  366): Not displayed: s=Surface(name=com.google.android.setupwizard/com.google.android.setupwizard.DateTimeSetupActivity, identity=12) pv=true mDrawState=1 ah=false th=false a=false
+V/WindowManager(  366): Resize reasons:  contentInsetsChanged=true visibleInsetsChanged=true surfaceResized=true configChanged=true
+V/WindowManager(  366): Resizing window Window{40d759e0 u0 com.google.android.setupwizard/com.google.android.setupwizard.DateTimeSetupActivity} to 480.0x800.0
+V/WindowManager(  366): Reporting new frame to Window{40d759e0 u0 com.google.android.setupwizard/com.google.android.setupwizard.DateTimeSetupActivity}: Rect(0, 0 - 480, 800)
+I/WindowManager(  366): Sending new config to window Window{40d759e0 u0 com.google.android.setupwizard/com.google.android.setupwizard.DateTimeSetupActivity}: 480.0x800.0 / {1.0 ?mcc?mnc en_US ldltr sw384dp w384dp h615dp 200dpi nrml long port finger -keyb/v/h -nav/h s.6 themeResource=null} / 0x0
+I/WindowManager(  366): Resizing Window{40d759e0 u0 com.google.android.setupwizard/com.google.android.setupwizard.DateTimeSetupActivity} WITH DRAW PENDING
+V/WindowStateAnimator(  366): finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING WindowStateAnimator{40ed8a20 com.google.android.setupwizard/com.google.android.setupwizard.DateTimeSetupActivity} in Surface(name=com.google.android.setupwizard/com.google.android.setupwizard.DateTimeSetupActivity, identity=12)
+V/WindowManager(  366): Eval win Window{40d759e0 u0 com.google.android.setupwizard/com.google.android.setupwizard.DateTimeSetupActivity}: isDrawn=true, isAnimating=true
+V/WindowManager(  366): tokenMayBeDrawn: AppWindowToken{410bb048 token=Token{40da5f90 ActivityRecord{40d86058 u0 com.google.android.setupwizard/.DateTimeSetupActivity}}} freezingScreen=false mAppFreezing=false
+I/ActivityManager(  366): Displayed com.google.android.setupwizard/.DateTimeSetupActivity: +1s460ms
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+I/WindowManager(  366):   SURFACE SHOW (performShowLocked): Window{40d759e0 u0 com.google.android.setupwizard/com.google.android.setupwizard.DateTimeSetupActivity}
+V/WindowManager(  366): Skipping AppWindowToken{411875f0 token=Token{40eeabc0 ActivityRecord{40d99508 u0 com.google.android.setupwizard/.LocationSharingActivity}}} -- hidden on top
+V/WindowManager(  366): Skipping AppWindowToken{40d0cf50 token=Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}} -- hidden on top
+V/WindowManager(  366): No app is requesting an orientation
+E/NetworkLocationRealOs(  964): no android ID; can't access encrypted cache
+E/NetworkLocationRealOs(  964): java.io.IOException: no android ID; can't access encrypted cache
+E/NetworkLocationRealOs(  964): 	at com.google.android.location.os.real.RealOs.getEncryptionKey(RealOs.java:176)
+E/NetworkLocationRealOs(  964): 	at com.google.android.location.os.real.RealOs.getEncryptionKey(RealOs.java:437)
+E/NetworkLocationRealOs(  964): 	at com.google.android.location.os.real.RealOs.getEncryptionKeyOrNull(RealOs.java:219)
+E/NetworkLocationRealOs(  964): 	at com.google.android.location.cache.ModelState.create(ModelState.java:67)
+E/NetworkLocationRealOs(  964): 	at com.google.android.location.internal.server.ServiceThread.updateState(ServiceThread.java:317)
+E/NetworkLocationRealOs(  964): 	at com.google.android.location.internal.server.ServiceThread.access$000(ServiceThread.java:79)
+E/NetworkLocationRealOs(  964): 	at com.google.android.location.internal.server.ServiceThread$EnabledObserver.update(ServiceThread.java:277)
+E/NetworkLocationRealOs(  964): 	at java.util.Observable.notifyObservers(Observable.java:138)
+E/NetworkLocationRealOs(  964): 	at java.util.Observable.notifyObservers(Observable.java:113)
+E/NetworkLocationRealOs(  964): 	at android.content.ContentQueryMap.requery(ContentQueryMap.java:145)
+E/NetworkLocationRealOs(  964): 	at android.content.ContentQueryMap$1.onChange(ContentQueryMap.java:105)
+E/NetworkLocationRealOs(  964): 	at android.database.ContentObserver.onChange(ContentObserver.java:129)
+E/NetworkLocationRealOs(  964): 	at android.database.ContentObserver$NotificationRunnable.run(ContentObserver.java:180)
+E/NetworkLocationRealOs(  964): 	at android.os.Handler.handleCallback(Handler.java:725)
+E/NetworkLocationRealOs(  964): 	at android.os.Handler.dispatchMessage(Handler.java:92)
+E/NetworkLocationRealOs(  964): 	at android.os.Looper.loop(Looper.java:137)
+E/NetworkLocationRealOs(  964): 	at android.os.HandlerThread.run(HandlerThread.java:60)
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(48.0, 80.0, 528.0, 880.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(48.0, 80.0, 528.0, 880.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+V/WindowManager(  366): Skipping AppWindowToken{411875f0 token=Token{40eeabc0 ActivityRecord{40d99508 u0 com.google.android.setupwizard/.LocationSharingActivity}}} -- hidden on top
+V/WindowManager(  366): Skipping AppWindowToken{40d0cf50 token=Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}} -- hidden on top
+V/WindowManager(  366): No app is requesting an orientation
+E/NetworkLocationRealOs(  964): no android ID; can't access encrypted cache
+E/NetworkLocationRealOs(  964): java.io.IOException: no android ID; can't access encrypted cache
+E/NetworkLocationRealOs(  964): 	at com.google.android.location.os.real.RealOs.getEncryptionKey(RealOs.java:176)
+E/NetworkLocationRealOs(  964): 	at com.google.android.location.os.real.RealOs.getEncryptionKey(RealOs.java:437)
+E/NetworkLocationRealOs(  964): 	at com.google.android.location.os.real.RealOs.getEncryptionKeyOrNull(RealOs.java:219)
+E/NetworkLocationRealOs(  964): 	at com.google.android.location.cache.SeenDevicesCache.<init>(SeenDevicesCache.java:105)
+E/NetworkLocationRealOs(  964): 	at com.google.android.location.NetworkProvider.<init>(NetworkProvider.java:57)
+E/NetworkLocationRealOs(  964): 	at com.google.android.location.internal.server.ServiceThread.updateState(ServiceThread.java:318)
+E/NetworkLocationRealOs(  964): 	at com.google.android.location.internal.server.ServiceThread.access$000(ServiceThread.java:79)
+E/NetworkLocationRealOs(  964): 	at com.google.android.location.internal.server.ServiceThread$EnabledObserver.update(ServiceThread.java:277)
+E/NetworkLocationRealOs(  964): 	at java.util.Observable.notifyObservers(Observable.java:138)
+E/NetworkLocationRealOs(  964): 	at java.util.Observable.notifyObservers(Observable.java:113)
+E/NetworkLocationRealOs(  964): 	at android.content.ContentQueryMap.requery(ContentQueryMap.java:145)
+E/NetworkLocationRealOs(  964): 	at android.content.ContentQueryMap$1.onChange(ContentQueryMap.java:105)
+E/NetworkLocationRealOs(  964): 	at android.database.ContentObserver.onChange(ContentObserver.java:129)
+E/NetworkLocationRealOs(  964): 	at android.database.ContentObserver$NotificationRunnable.run(ContentObserver.java:180)
+E/NetworkLocationRealOs(  964): 	at android.os.Handler.handleCallback(Handler.java:725)
+E/NetworkLocationRealOs(  964): 	at android.os.Handler.dispatchMessage(Handler.java:92)
+E/NetworkLocationRealOs(  964): 	at android.os.Looper.loop(Looper.java:137)
+E/NetworkLocationRealOs(  964): 	at android.os.HandlerThread.run(HandlerThread.java:60)
+D/dalvikvm(  964): GC_CONCURRENT freed 212K, 15% free 2689K/3148K, paused 6ms+3ms, total 72ms
+D/dalvikvm(  964): WAIT_FOR_CONCURRENT_GC blocked 15ms
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+V/NetworkMonitor(  749): Stopped NetworkMonitor
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=false): mNextAppTransition=-1 hidden=true hiddenRequested=true
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+D/dalvikvm(  964): GC_CONCURRENT freed 141K, 12% free 3057K/3448K, paused 39ms+3ms, total 83ms
+D/dalvikvm(  964): WAIT_FOR_CONCURRENT_GC blocked 20ms
+W/WifiNormalizer(  964): No specific device detected. Offset set to -7.
+D/dalvikvm(  775): GC_CONCURRENT freed 374K, 20% free 2576K/3200K, paused 3ms+2ms, total 32ms
+I/System  (  964): Loaded time zone names for  in 301ms (270ms in ICU)
+D/dalvikvm(  964): GC_CONCURRENT freed 715K, 26% free 2850K/3816K, paused 15ms+6ms, total 63ms
+D/dalvikvm(  964): WAIT_FOR_CONCURRENT_GC blocked 19ms
+I/System  (  964): Loaded time zone names for en_US in 208ms (203ms in ICU)
+W/Settings(  964): Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+D/dalvikvm(  366): GC_CONCURRENT freed 706K, 29% free 5482K/7696K, paused 4ms+12ms, total 77ms
+D/dalvikvm(  964): GC_FOR_ALLOC freed 222K, 29% free 2722K/3816K, paused 19ms, total 20ms
+I/dalvikvm-heap(  964): Grow heap (frag case) to 2.928MB for 32784-byte allocation
+D/dalvikvm(  964): GC_FOR_ALLOC freed 0K, 29% free 2754K/3852K, paused 22ms, total 22ms
+I/System.out(  964): [SEVERE:20674]: LogSource: AsyncHttpRequestImpl.run(): exception thrown : Unable to resolve host "www.google.com": No address associated with hostname: java.net.UnknownHostException
+E/GlsClient-query(  964): requestFailed
+W/SocketClient(  107): write error (Broken pipe)
+I/ActivityManager(  366): No longer want com.android.contacts (pid 930): empty #17
+I/ActivityManager(  366): No longer want com.android.mms (pid 1193): empty #17
+D/CountryDetector(  366): No listener is left
+I/ContactDirectoryManager(  775): deleted 0 stale rows which don't have any relevant directory
+I/ContactDirectoryManager(  775): Discovered 0 contact directories in 147ms
+I/ContactsDatabaseHelper(  775): Switching to locale en_US
+D/dalvikvm(  775): GC_CONCURRENT freed 298K, 18% free 2664K/3212K, paused 3ms+3ms, total 24ms
+V/WindowManager(  366): setAppVisibility(Token{40da5f90 ActivityRecord{40d86058 u0 com.google.android.setupwizard/.DateTimeSetupActivity}}, visible=false): mNextAppTransition=8199 hidden=false hiddenRequested=false
+V/WindowManager(  366): setAppVisibility(Token{40da5f90 ActivityRecord{40d86058 u0 com.google.android.setupwizard/.DateTimeSetupActivity}}, visible=false): mNextAppTransition=8199 hidden=false hiddenRequested=true
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=true): mNextAppTransition=8199 hidden=true hiddenRequested=true
+V/WindowManager(  366): Skipping AppWindowToken{410bb048 token=Token{40da5f90 ActivityRecord{40d86058 u0 com.google.android.setupwizard/.DateTimeSetupActivity}}} -- going to hide
+V/WindowManager(  366): No app is requesting an orientation
+I/SetupWizard(  749): onActivityResult(10018, -1) lastActivity=10018
+I/SetupWizard(  749): starting activity 10010
+I/ActivityManager(  366): START u0 {cmp=com.google.android.gsf.login/.NameActivity (has extras)} from pid 749
+V/WindowManager(  366): Skipping set freeze of Token{40ddfea8 ActivityRecord{40d99508 u0 com.google.android.gsf.login/.NameActivity}}
+V/WindowManager(  366): setAppVisibility(Token{40ddfea8 ActivityRecord{40d99508 u0 com.google.android.gsf.login/.NameActivity}}, visible=true): mNextAppTransition=4102 hidden=true hiddenRequested=true
+V/WindowManager(  366): Skipping AppWindowToken{410bb048 token=Token{40da5f90 ActivityRecord{40d86058 u0 com.google.android.setupwizard/.DateTimeSetupActivity}}} -- going to hide
+V/WindowManager(  366): Done at AppWindowToken{41029490 token=Token{40ddfea8 ActivityRecord{40d99508 u0 com.google.android.gsf.login/.NameActivity}}} -- full screen, return -1
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=false): mNextAppTransition=4102 hidden=true hiddenRequested=false
+W/GLSUser (  780): GLS Activity without session
+D/dalvikvm(  780): GC_CONCURRENT freed 146K, 14% free 2561K/2960K, paused 7ms+2ms, total 30ms
+D/dalvikvm(  780): WAIT_FOR_CONCURRENT_GC blocked 23ms
+D/dalvikvm(  780): GC_FOR_ALLOC freed 345K, 23% free 2566K/3316K, paused 16ms, total 17ms
+D/dalvikvm(  780): GC_FOR_ALLOC freed 171K, 19% free 2686K/3316K, paused 18ms, total 18ms
+D/dalvikvm(  780): GC_FOR_ALLOC freed 85K, 17% free 2831K/3404K, paused 22ms, total 22ms
+D/dalvikvm(  780): GC_FOR_ALLOC freed 143K, 19% free 2850K/3500K, paused 23ms, total 23ms
+I/dalvikvm-heap(  780): Grow heap (frag case) to 3.628MB for 635812-byte allocation
+D/dalvikvm(  780): GC_FOR_ALLOC freed 1K, 16% free 3470K/4124K, paused 26ms, total 26ms
+D/dalvikvm(  780): GC_CONCURRENT freed <1K, 16% free 3470K/4124K, paused 3ms+2ms, total 21ms
+D/dalvikvm(  780): WAIT_FOR_CONCURRENT_GC blocked 18ms
+I/dalvikvm-heap(  780): Grow heap (frag case) to 4.048MB for 441444-byte allocation
+D/dalvikvm(  780): GC_FOR_ALLOC freed <1K, 15% free 3901K/4556K, paused 30ms, total 30ms
+D/dalvikvm(  780): GC_CONCURRENT freed 926K, 27% free 3457K/4700K, paused 2ms+2ms, total 25ms
+D/dalvikvm(  780): WAIT_FOR_CONCURRENT_GC blocked 17ms
+I/WindowStateAnimator(  366): createSurface WindowStateAnimator{410ec2f8 com.google.android.gsf.login/com.google.android.gsf.login.NameActivity}: mDrawState=DRAW_PENDING
+V/WindowManager(  366): Skipping AppWindowToken{410bb048 token=Token{40da5f90 ActivityRecord{40d86058 u0 com.google.android.setupwizard/.DateTimeSetupActivity}}} -- going to hide
+V/WindowManager(  366): Done at AppWindowToken{41029490 token=Token{40ddfea8 ActivityRecord{40d99508 u0 com.google.android.gsf.login/.NameActivity}}} -- full screen, return -1
+V/WindowManager(  366): Eval win Window{40d7f080 u0 com.google.android.gsf.login/com.google.android.gsf.login.NameActivity}: isDrawn=false, isAnimating=true
+V/WindowManager(  366): Not displayed: s=Surface(name=com.google.android.gsf.login/com.google.android.gsf.login.NameActivity, identity=13) pv=true mDrawState=1 ah=false th=false a=false
+V/WindowManager(  366): Resize reasons:  contentInsetsChanged=true visibleInsetsChanged=true surfaceResized=true configChanged=true
+V/WindowManager(  366): Resizing window Window{40d7f080 u0 com.google.android.gsf.login/com.google.android.gsf.login.NameActivity} to 480.0x800.0
+V/WindowManager(  366): Reporting new frame to Window{40d7f080 u0 com.google.android.gsf.login/com.google.android.gsf.login.NameActivity}: Rect(0, 0 - 480, 800)
+I/WindowManager(  366): Sending new config to window Window{40d7f080 u0 com.google.android.gsf.login/com.google.android.gsf.login.NameActivity}: 480.0x800.0 / {1.0 ?mcc?mnc en_US ldltr sw384dp w384dp h615dp 200dpi nrml long port finger -keyb/v/h -nav/h s.6 themeResource=null} / 0x0
+I/WindowManager(  366): Resizing Window{40d7f080 u0 com.google.android.gsf.login/com.google.android.gsf.login.NameActivity} WITH DRAW PENDING
+D/libEGL  (  780): loaded /system/lib/egl/libEGL_adreno200.so
+D/libEGL  (  780): loaded /system/lib/egl/libGLESv1_CM_adreno200.so
+D/libEGL  (  780): loaded /system/lib/egl/libGLESv2_adreno200.so
+I/Adreno200-EGL(  780): <qeglDrvAPI_eglInitialize:294>: EGL 1.4 QUALCOMM build: AU_LINUX_ANDROID_JB.04.01.01.00.036_msm8960_JB_CL2644550_release_AU (CL2644550)
+I/Adreno200-EGL(  780): Build Date: 07/31/12 Tue
+I/Adreno200-EGL(  780): Local Branch: 
+I/Adreno200-EGL(  780): Remote Branch: quic/master
+I/Adreno200-EGL(  780): Local Patches: NONE
+I/Adreno200-EGL(  780): Reconstruct Branch: AU_LINUX_ANDROID_JB.04.01.01.00.036 +  NOTHING
+D/OpenGLRenderer(  780): Enabling debug mode 0
+I/ActivityManager(  366): Displayed com.google.android.gsf.login/.NameActivity: +925ms
+V/WindowStateAnimator(  366): finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING WindowStateAnimator{410ec2f8 com.google.android.gsf.login/com.google.android.gsf.login.NameActivity} in Surface(name=com.google.android.gsf.login/com.google.android.gsf.login.NameActivity, identity=13)
+V/WindowManager(  366): Eval win Window{40d7f080 u0 com.google.android.gsf.login/com.google.android.gsf.login.NameActivity}: isDrawn=true, isAnimating=true
+V/WindowManager(  366): tokenMayBeDrawn: AppWindowToken{41029490 token=Token{40ddfea8 ActivityRecord{40d99508 u0 com.google.android.gsf.login/.NameActivity}}} freezingScreen=false mAppFreezing=false
+I/WindowManager(  366):   SURFACE SHOW (performShowLocked): Window{40d7f080 u0 com.google.android.gsf.login/com.google.android.gsf.login.NameActivity}
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x1e40000} lp.flags=0x1810100
+V/WindowManager(  366): Skipping AppWindowToken{410bb048 token=Token{40da5f90 ActivityRecord{40d86058 u0 com.google.android.setupwizard/.DateTimeSetupActivity}}} -- hidden on top
+V/WindowManager(  366): Done at AppWindowToken{41029490 token=Token{40ddfea8 ActivityRecord{40d99508 u0 com.google.android.gsf.login/.NameActivity}}} -- full screen, return -1
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(48.0, 80.0, 528.0, 880.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x1e40000} lp.flags=0x1810100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(36.97223, 61.62039, 516.9722, 861.62036)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x1e40000} lp.flags=0x1810100
+V/WindowManager(  366): Skipping AppWindowToken{410bb048 token=Token{40da5f90 ActivityRecord{40d86058 u0 com.google.android.setupwizard/.DateTimeSetupActivity}}} -- hidden on top
+V/WindowManager(  366): Done at AppWindowToken{41029490 token=Token{40ddfea8 ActivityRecord{40d99508 u0 com.google.android.gsf.login/.NameActivity}}} -- full screen, return -1
+V/WindowManager(  366): Skipping AppWindowToken{410bb048 token=Token{40da5f90 ActivityRecord{40d86058 u0 com.google.android.setupwizard/.DateTimeSetupActivity}}} -- hidden on top
+V/WindowManager(  366): Done at AppWindowToken{41029490 token=Token{40ddfea8 ActivityRecord{40d99508 u0 com.google.android.gsf.login/.NameActivity}}} -- full screen, return -1
+D/dalvikvm(  669): GC_CONCURRENT freed 172K, 14% free 2613K/3032K, paused 13ms+3ms, total 38ms
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x1e40000} lp.flags=0x1810100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x1e40000} lp.flags=0x1810100
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=false): mNextAppTransition=-1 hidden=true hiddenRequested=true
+V/NetworkMonitor(  749): Stopped NetworkMonitor
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x1e40000} lp.flags=0x1810100
+D/dalvikvm(  669): GC_CONCURRENT freed 287K, 16% free 2829K/3360K, paused 8ms+13ms, total 55ms
+I/Choreographer(  669): Skipped 49 frames!  The application may be doing too much work on its main thread.
+D/dalvikvm(  669): GC_CONCURRENT freed 334K, 17% free 2925K/3504K, paused 14ms+33ms, total 160ms
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+I/WindowStateAnimator(  366): createSurface WindowStateAnimator{410b93d8 InputMethod}: mDrawState=DRAW_PENDING
+V/WindowManager(  366): Done at AppWindowToken{41029490 token=Token{40ddfea8 ActivityRecord{40d99508 u0 com.google.android.gsf.login/.NameActivity}}} -- full screen, return -1
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x1e40000} lp.flags=0x1810100
+V/WindowManager(  366): Resize reasons:  contentInsetsChanged=false visibleInsetsChanged=false surfaceResized=true configChanged=true
+V/WindowManager(  366): Resizing window Window{40ed2280 u0 InputMethod} to 480.0x346.0
+V/WindowManager(  366): Reporting new frame to Window{40ed2280 u0 InputMethod}: Rect(0, 454 - 480, 800)
+I/WindowManager(  366): Sending new config to window Window{40ed2280 u0 InputMethod}: 480.0x346.0 / {1.0 ?mcc?mnc en_US ldltr sw384dp w384dp h615dp 200dpi nrml long port finger -keyb/v/h -nav/h s.6 themeResource=null} / 0x0
+I/WindowManager(  366): Resizing Window{40ed2280 u0 InputMethod} WITH DRAW PENDING
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x1e40000} lp.flags=0x1810100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x1e40000} lp.flags=0x1810100
+V/WindowManager(  366): Done at AppWindowToken{41029490 token=Token{40ddfea8 ActivityRecord{40d99508 u0 com.google.android.gsf.login/.NameActivity}}} -- full screen, return -1
+V/WindowManager(  366): Resize reasons:  contentInsetsChanged=false visibleInsetsChanged=false surfaceResized=true configChanged=false
+V/WindowManager(  366): Resizing window Window{40ed2280 u0 InputMethod EXITING} to 480.0x653.0
+V/WindowManager(  366): Reporting new frame to Window{40ed2280 u0 InputMethod EXITING}: Rect(0, 147 - 480, 800)
+I/WindowManager(  366): Resizing Window{40ed2280 u0 InputMethod EXITING} WITH DRAW PENDING
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x1e40000} lp.flags=0x1810100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x1e40000} lp.flags=0x1810100
+D/dalvikvm(  366): GC_CONCURRENT freed 753K, 30% free 5459K/7696K, paused 5ms+32ms, total 296ms
+I/ContactsDatabaseHelper(  775): Locale change completed in 2709ms
+I/ContactsDatabaseHelper(  775): Switching to locale en_US
+E/MetadataRetrieverClient(  113): failed to extract an album art
+D/dalvikvm(  775): GC_CONCURRENT freed 393K, 20% free 2661K/3308K, paused 8ms+9ms, total 49ms
+W/BackupManagerService(  366): dataChanged but no participant pkg='com.android.providers.settings' uid=10033
+V/WindowManager(  366): setAppVisibility(Token{40ddfea8 ActivityRecord{40d99508 u0 com.google.android.gsf.login/.NameActivity}}, visible=false): mNextAppTransition=8199 hidden=false hiddenRequested=false
+V/WindowManager(  366): setAppVisibility(Token{40ddfea8 ActivityRecord{40d99508 u0 com.google.android.gsf.login/.NameActivity}}, visible=false): mNextAppTransition=8199 hidden=false hiddenRequested=true
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=true): mNextAppTransition=8199 hidden=true hiddenRequested=true
+V/WindowManager(  366): Skipping AppWindowToken{41029490 token=Token{40ddfea8 ActivityRecord{40d99508 u0 com.google.android.gsf.login/.NameActivity}}} -- going to hide
+V/WindowManager(  366): No app is requesting an orientation
+I/SetupWizard(  749): onActivityResult(10010, -1) lastActivity=10010
+I/SetupWizard(  749): starting activity 10013
+I/ActivityManager(  366): START u0 {cmp=com.google.android.setupwizard/.NoAccountTosActivity (has extras)} from pid 749
+V/WindowManager(  366): Skipping set freeze of Token{410167f8 ActivityRecord{40d5b178 u0 com.google.android.setupwizard/.NoAccountTosActivity}}
+V/WindowManager(  366): setAppVisibility(Token{410167f8 ActivityRecord{40d5b178 u0 com.google.android.setupwizard/.NoAccountTosActivity}}, visible=true): mNextAppTransition=4102 hidden=true hiddenRequested=true
+V/WindowManager(  366): Skipping AppWindowToken{41029490 token=Token{40ddfea8 ActivityRecord{40d99508 u0 com.google.android.gsf.login/.NameActivity}}} -- going to hide
+V/WindowManager(  366): Done at AppWindowToken{4116bbe0 token=Token{410167f8 ActivityRecord{40d5b178 u0 com.google.android.setupwizard/.NoAccountTosActivity}}} -- full screen, return -1
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=false): mNextAppTransition=4102 hidden=true hiddenRequested=false
+V/NetworkMonitor(  749): Starting NetworkMonitor
+D/SetupWizard(  749): BaseActivity.onCreate() mIsFirstRun=true mAllNetworkSetupSkipped=true mIsSecondaryUser=false
+V/NetworkMonitor(  749): GLS onServiceConnected
+V/NetworkMonitor(  749): Network is DOWN, Checkin has NOT succeeded, GLS IS connected
+V/NetworkMonitor(  749): Network is DOWN, Checkin has NOT succeeded, GLS IS connected
+I/WindowStateAnimator(  366): createSurface WindowStateAnimator{4114c6f8 com.google.android.setupwizard/com.google.android.setupwizard.NoAccountTosActivity}: mDrawState=DRAW_PENDING
+V/WindowManager(  366): Skipping AppWindowToken{41029490 token=Token{40ddfea8 ActivityRecord{40d99508 u0 com.google.android.gsf.login/.NameActivity}}} -- going to hide
+V/WindowManager(  366): Done at AppWindowToken{4116bbe0 token=Token{410167f8 ActivityRecord{40d5b178 u0 com.google.android.setupwizard/.NoAccountTosActivity}}} -- full screen, return -1
+V/WindowManager(  366): Eval win Window{40ec18d8 u0 com.google.android.setupwizard/com.google.android.setupwizard.NoAccountTosActivity}: isDrawn=false, isAnimating=true
+V/WindowManager(  366): Not displayed: s=Surface(name=com.google.android.setupwizard/com.google.android.setupwizard.NoAccountTosActivity, identity=15) pv=true mDrawState=1 ah=false th=false a=false
+V/WindowManager(  366): Resize reasons:  contentInsetsChanged=true visibleInsetsChanged=true surfaceResized=true configChanged=true
+V/WindowManager(  366): Resizing window Window{40ec18d8 u0 com.google.android.setupwizard/com.google.android.setupwizard.NoAccountTosActivity} to 480.0x800.0
+V/WindowManager(  366): Reporting new frame to Window{40ec18d8 u0 com.google.android.setupwizard/com.google.android.setupwizard.NoAccountTosActivity}: Rect(0, 0 - 480, 800)
+I/WindowManager(  366): Sending new config to window Window{40ec18d8 u0 com.google.android.setupwizard/com.google.android.setupwizard.NoAccountTosActivity}: 480.0x800.0 / {1.0 ?mcc?mnc en_US ldltr sw384dp w384dp h615dp 200dpi nrml long port finger -keyb/v/h -nav/h s.6 themeResource=null} / 0x0
+I/WindowManager(  366): Resizing Window{40ec18d8 u0 com.google.android.setupwizard/com.google.android.setupwizard.NoAccountTosActivity} WITH DRAW PENDING
+V/WindowStateAnimator(  366): finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING WindowStateAnimator{4114c6f8 com.google.android.setupwizard/com.google.android.setupwizard.NoAccountTosActivity} in Surface(name=com.google.android.setupwizard/com.google.android.setupwizard.NoAccountTosActivity, identity=15)
+V/WindowManager(  366): Eval win Window{40ec18d8 u0 com.google.android.setupwizard/com.google.android.setupwizard.NoAccountTosActivity}: isDrawn=true, isAnimating=true
+V/WindowManager(  366): tokenMayBeDrawn: AppWindowToken{4116bbe0 token=Token{410167f8 ActivityRecord{40d5b178 u0 com.google.android.setupwizard/.NoAccountTosActivity}}} freezingScreen=false mAppFreezing=false
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+I/WindowManager(  366):   SURFACE SHOW (performShowLocked): Window{40ec18d8 u0 com.google.android.setupwizard/com.google.android.setupwizard.NoAccountTosActivity}
+V/WindowManager(  366): Skipping AppWindowToken{41029490 token=Token{40ddfea8 ActivityRecord{40d99508 u0 com.google.android.gsf.login/.NameActivity}}} -- hidden on top
+V/WindowManager(  366): Done at AppWindowToken{4116bbe0 token=Token{410167f8 ActivityRecord{40d5b178 u0 com.google.android.setupwizard/.NoAccountTosActivity}}} -- full screen, return -1
+I/ActivityManager(  366): Displayed com.google.android.setupwizard/.NoAccountTosActivity: +399ms
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(48.0, 80.0, 528.0, 880.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(30.530685, 50.88449, 510.5307, 850.8845)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+V/WindowManager(  366): Skipping AppWindowToken{41029490 token=Token{40ddfea8 ActivityRecord{40d99508 u0 com.google.android.gsf.login/.NameActivity}}} -- hidden on top
+V/WindowManager(  366): Done at AppWindowToken{4116bbe0 token=Token{410167f8 ActivityRecord{40d5b178 u0 com.google.android.setupwizard/.NoAccountTosActivity}}} -- full screen, return -1
+W/IInputConnectionWrapper(  780): showStatusIcon on inactive InputConnection
+I/ContactsDatabaseHelper(  775): Locale change completed in 1448ms
+I/ContactsFTS(  775): Rebuild contact search index in 124ms, 0 contacts
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=false): mNextAppTransition=-1 hidden=true hiddenRequested=true
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+I/ContactsProvider(  775): Upgrading aggregation algorithm
+I/ContactAggregator(  775): Marked all visible contacts for aggregation: 0 raw contacts, 10 ms
+I/ContactsProvider(  775): Aggregation algorithm upgraded for 0 raw contacts in 36ms
+D/dalvikvm(  862): GC_CONCURRENT freed 234K, 16% free 2553K/3036K, paused 3ms+6ms, total 32ms
+I/InputReader(  366): Reconfiguring input devices.  changes=0x00000010
+V/WindowManager(  366): setAppVisibility(Token{410167f8 ActivityRecord{40d5b178 u0 com.google.android.setupwizard/.NoAccountTosActivity}}, visible=false): mNextAppTransition=8199 hidden=false hiddenRequested=false
+D/dalvikvm(  366): GC_FOR_ALLOC freed 546K, 30% free 5460K/7696K, paused 72ms, total 74ms
+V/WindowManager(  366): setAppVisibility(Token{410167f8 ActivityRecord{40d5b178 u0 com.google.android.setupwizard/.NoAccountTosActivity}}, visible=false): mNextAppTransition=8199 hidden=false hiddenRequested=true
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=true): mNextAppTransition=8199 hidden=true hiddenRequested=true
+V/WindowManager(  366): Skipping AppWindowToken{4116bbe0 token=Token{410167f8 ActivityRecord{40d5b178 u0 com.google.android.setupwizard/.NoAccountTosActivity}}} -- going to hide
+V/WindowManager(  366): No app is requesting an orientation
+I/SetupWizard(  749): onActivityResult(10013, -1) lastActivity=10013
+I/SetupWizard(  749): starting activity 10012
+I/ActivityManager(  366): START u0 {cmp=com.google.android.setupwizard/.SetupCompleteActivity (has extras)} from pid 749
+V/WindowManager(  366): Skipping set freeze of Token{4110ce58 ActivityRecord{40d17f58 u0 com.google.android.setupwizard/.SetupCompleteActivity}}
+V/WindowManager(  366): setAppVisibility(Token{4110ce58 ActivityRecord{40d17f58 u0 com.google.android.setupwizard/.SetupCompleteActivity}}, visible=true): mNextAppTransition=4102 hidden=true hiddenRequested=true
+V/WindowManager(  366): Skipping AppWindowToken{4116bbe0 token=Token{410167f8 ActivityRecord{40d5b178 u0 com.google.android.setupwizard/.NoAccountTosActivity}}} -- going to hide
+V/WindowManager(  366): Done at AppWindowToken{4116a2f8 token=Token{4110ce58 ActivityRecord{40d17f58 u0 com.google.android.setupwizard/.SetupCompleteActivity}}} -- full screen, return -1
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=false): mNextAppTransition=4102 hidden=true hiddenRequested=false
+V/NetworkMonitor(  749): Starting NetworkMonitor
+D/SetupWizard(  749): BaseActivity.onCreate() mIsFirstRun=true mAllNetworkSetupSkipped=true mIsSecondaryUser=false
+D/dalvikvm(  749): GC_CONCURRENT freed 314K, 27% free 3596K/4924K, paused 7ms+5ms, total 137ms
+V/NetworkMonitor(  749): GLS onServiceConnected
+V/NetworkMonitor(  749): Network is DOWN, Checkin has NOT succeeded, GLS IS connected
+V/NetworkMonitor(  749): Network is DOWN, Checkin has NOT succeeded, GLS IS connected
+I/WindowStateAnimator(  366): createSurface WindowStateAnimator{41147140 com.google.android.setupwizard/com.google.android.setupwizard.SetupCompleteActivity}: mDrawState=DRAW_PENDING
+V/WindowManager(  366): Skipping AppWindowToken{4116bbe0 token=Token{410167f8 ActivityRecord{40d5b178 u0 com.google.android.setupwizard/.NoAccountTosActivity}}} -- going to hide
+V/WindowManager(  366): Done at AppWindowToken{4116a2f8 token=Token{4110ce58 ActivityRecord{40d17f58 u0 com.google.android.setupwizard/.SetupCompleteActivity}}} -- full screen, return -1
+V/WindowManager(  366): Eval win Window{40e88a88 u0 com.google.android.setupwizard/com.google.android.setupwizard.SetupCompleteActivity}: isDrawn=false, isAnimating=true
+V/WindowManager(  366): Not displayed: s=Surface(name=com.google.android.setupwizard/com.google.android.setupwizard.SetupCompleteActivity, identity=16) pv=true mDrawState=1 ah=false th=false a=false
+V/WindowManager(  366): Resize reasons:  contentInsetsChanged=true visibleInsetsChanged=true surfaceResized=true configChanged=true
+V/WindowManager(  366): Resizing window Window{40e88a88 u0 com.google.android.setupwizard/com.google.android.setupwizard.SetupCompleteActivity} to 480.0x800.0
+V/WindowManager(  366): Reporting new frame to Window{40e88a88 u0 com.google.android.setupwizard/com.google.android.setupwizard.SetupCompleteActivity}: Rect(0, 0 - 480, 800)
+I/WindowManager(  366): Sending new config to window Window{40e88a88 u0 com.google.android.setupwizard/com.google.android.setupwizard.SetupCompleteActivity}: 480.0x800.0 / {1.0 ?mcc?mnc en_US ldltr sw384dp w384dp h615dp 200dpi nrml long port finger -keyb/v/h -nav/h s.6 themeResource=null} / 0x0
+I/WindowManager(  366): Resizing Window{40e88a88 u0 com.google.android.setupwizard/com.google.android.setupwizard.SetupCompleteActivity} WITH DRAW PENDING
+I/ActivityManager(  366): Displayed com.google.android.setupwizard/.SetupCompleteActivity: +280ms
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+V/WindowStateAnimator(  366): finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING WindowStateAnimator{41147140 com.google.android.setupwizard/com.google.android.setupwizard.SetupCompleteActivity} in Surface(name=com.google.android.setupwizard/com.google.android.setupwizard.SetupCompleteActivity, identity=16)
+V/WindowManager(  366): Eval win Window{40e88a88 u0 com.google.android.setupwizard/com.google.android.setupwizard.SetupCompleteActivity}: isDrawn=true, isAnimating=true
+V/WindowManager(  366): tokenMayBeDrawn: AppWindowToken{4116a2f8 token=Token{4110ce58 ActivityRecord{40d17f58 u0 com.google.android.setupwizard/.SetupCompleteActivity}}} freezingScreen=false mAppFreezing=false
+I/WindowManager(  366):   SURFACE SHOW (performShowLocked): Window{40e88a88 u0 com.google.android.setupwizard/com.google.android.setupwizard.SetupCompleteActivity}
+V/WindowManager(  366): Skipping AppWindowToken{4116bbe0 token=Token{410167f8 ActivityRecord{40d5b178 u0 com.google.android.setupwizard/.NoAccountTosActivity}}} -- hidden on top
+V/WindowManager(  366): Done at AppWindowToken{4116a2f8 token=Token{4110ce58 ActivityRecord{40d17f58 u0 com.google.android.setupwizard/.SetupCompleteActivity}}} -- full screen, return -1
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(48.0, 80.0, 528.0, 880.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(48.0, 80.0, 528.0, 880.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+V/WindowManager(  366): Skipping AppWindowToken{4116bbe0 token=Token{410167f8 ActivityRecord{40d5b178 u0 com.google.android.setupwizard/.NoAccountTosActivity}}} -- hidden on top
+V/WindowManager(  366): Done at AppWindowToken{4116a2f8 token=Token{4110ce58 ActivityRecord{40d17f58 u0 com.google.android.setupwizard/.SetupCompleteActivity}}} -- full screen, return -1
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=false): mNextAppTransition=-1 hidden=true hiddenRequested=true
+V/NetworkMonitor(  749): Stopped NetworkMonitor
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295 vsysui=0x400000} lp.flags=0x1810100
+E/MetadataRetrieverClient(  113): failed to extract an album art
+W/BackupManagerService(  366): dataChanged but no participant pkg='com.android.providers.settings' uid=10033
+V/WindowManager(  366): setAppVisibility(Token{4110ce58 ActivityRecord{40d17f58 u0 com.google.android.setupwizard/.SetupCompleteActivity}}, visible=false): mNextAppTransition=8199 hidden=false hiddenRequested=false
+D/dalvikvm(  366): GC_FOR_ALLOC freed 356K, 30% free 5393K/7660K, paused 61ms, total 62ms
+V/WindowManager(  366): setAppVisibility(Token{4110ce58 ActivityRecord{40d17f58 u0 com.google.android.setupwizard/.SetupCompleteActivity}}, visible=false): mNextAppTransition=8199 hidden=false hiddenRequested=true
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=true): mNextAppTransition=8199 hidden=true hiddenRequested=true
+V/WindowManager(  366): Skipping AppWindowToken{4116a2f8 token=Token{4110ce58 ActivityRecord{40d17f58 u0 com.google.android.setupwizard/.SetupCompleteActivity}}} -- going to hide
+V/WindowManager(  366): No app is requesting an orientation
+I/SetupWizard(  749): onActivityResult(10012, -1) lastActivity=10012
+I/SetupWizard(  749): mabyeStartPrepaySetup()
+I/SetupWizard(  749): is not LTE
+V/WindowManager(  366): updateRotationUnchecked(alwaysSendConfiguration=false)
+V/WindowManager(  366): Application requested orientation -1, got rotation 0 which has compatible metrics
+D/SizeAdaptiveLayout(  609): com.android.internal.widget.SizeAdaptiveLayout{40e98750 V.E..... ......I. 0,0-0,0 #7f090065 app:id/adaptive}child view android.widget.FrameLayout{40ddb9c0 G.E..... ......ID 0,0-0,0 #102032a android:id/status_bar_latest_event_content} measured out of bounds at 80px clamped to 90px
+D/SizeAdaptiveLayout(  609): com.android.internal.widget.SizeAdaptiveLayout{40dff680 V.E..... ......I. 0,0-0,0 #7f090065 app:id/adaptive}child view android.widget.FrameLayout{40dc0710 G.E..... ......ID 0,0-0,0 #102032a android:id/status_bar_latest_event_content} measured out of bounds at 80px clamped to 90px
+V/SetupWizard(  749): System thinks we're the home activity. Removing SetupWizard...
+I/ActivityManager(  366): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.provision/.DefaultActivity} from pid 749
+V/SetupWizard(  749): *** SetupWizard completed ***
+I/Process (  749): Sending signal. PID: 749 SIG: 9
+I/StatusBarManagerService(  366): binder died for pkg=com.google.android.setupwizard
+I/StatusBarManagerService(  366): binder died for pkg=com.google.android.setupwizard
+I/ActivityManager(  366): Process com.google.android.setupwizard (pid 749) has died.
+I/StatusBarManagerService(  366): binder died for pkg=com.google.android.setupwizard
+I/StatusBarManagerService(  366): binder died for pkg=com.google.android.setupwizard
+I/StatusBarManagerService(  366): binder died for pkg=com.google.android.setupwizard
+I/StatusBarManagerService(  366): binder died for pkg=com.google.android.setupwizard
+W/InputDispatcher(  366): channel '40e88a88 com.google.android.setupwizard/com.google.android.setupwizard.SetupCompleteActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  366): channel '40e88a88 com.google.android.setupwizard/com.google.android.setupwizard.SetupCompleteActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  366): Attempted to unregister already unregistered input channel '40e88a88 com.google.android.setupwizard/com.google.android.setupwizard.SetupCompleteActivity (server)'
+I/WindowState(  366): WIN DEATH: Window{40e88a88 u0 com.google.android.setupwizard/com.google.android.setupwizard.SetupCompleteActivity}
+I/ActivityManager(  366): Start proc com.android.provision for activity com.android.provision/.DefaultActivity: pid=1548 uid=10018 gids={50018, 1028}
+I/ActivityManager(  366): No longer want com.google.android.inputmethod.latin.dictionarypack (pid 766): empty #17
+D/dalvikvm(  111): GC_EXPLICIT freed 37K, 12% free 2228K/2516K, paused 2ms+3ms, total 57ms
+D/dalvikvm(  111): GC_EXPLICIT freed <1K, 12% free 2228K/2516K, paused 2ms+12ms, total 47ms
+D/dalvikvm(  111): GC_EXPLICIT freed <1K, 12% free 2228K/2516K, paused 2ms+13ms, total 51ms
+D/PhoneStatusBar(  609): disable: < expand icons alerts* ticker system_info BACK home* recent* clock* search* >
+V/WindowManager(  366): Skipping set freeze of Token{40d70fc8 ActivityRecord{40d99508 u0 com.android.provision/.DefaultActivity}}
+V/WindowManager(  366): setAppVisibility(Token{40d70fc8 ActivityRecord{40d99508 u0 com.android.provision/.DefaultActivity}}, visible=true): mNextAppTransition=4102 hidden=true hiddenRequested=true
+V/WindowManager(  366): Done at AppWindowToken{4114c828 token=Token{40d70fc8 ActivityRecord{40d99508 u0 com.android.provision/.DefaultActivity}}} -- full screen, return -1
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=false): mNextAppTransition=4102 hidden=true hiddenRequested=false
+I/WindowStateAnimator(  366): createSurface WindowStateAnimator{4113e168 Starting com.android.provision}: mDrawState=DRAW_PENDING
+V/WindowManager(  366): Done at AppWindowToken{4114c828 token=Token{40d70fc8 ActivityRecord{40d99508 u0 com.android.provision/.DefaultActivity}}} -- full screen, return -1
+V/WindowManager(  366): Eval win Window{40f9dec0 u0 Starting com.android.provision}: isDrawn=false, isAnimating=true
+V/WindowManager(  366): Not displayed: s=Surface(name=Starting com.android.provision, identity=17) pv=true mDrawState=1 ah=false th=false a=false
+V/WindowManager(  366): Resize reasons:  contentInsetsChanged=true visibleInsetsChanged=true surfaceResized=true configChanged=true
+V/WindowManager(  366): Resizing window Window{40f9dec0 u0 Starting com.android.provision} to 480.0x800.0
+V/WindowManager(  366): Reporting new frame to Window{40f9dec0 u0 Starting com.android.provision}: Rect(0, 0 - 480, 800)
+I/WindowManager(  366): Sending new config to window Window{40f9dec0 u0 Starting com.android.provision}: 480.0x800.0 / {1.0 ?mcc?mnc en_US ldltr sw384dp w384dp h615dp 200dpi nrml long port finger -keyb/v/h -nav/h s.6 themeResource=null} / 0x0
+I/WindowManager(  366): Resizing Window{40f9dec0 u0 Starting com.android.provision} WITH DRAW PENDING
+E/Trace   ( 1548): error opening trace file: No such file or directory (2)
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x19 wanim=0x10302e9} lp.flags=0x1830118
+V/WindowStateAnimator(  366): finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING WindowStateAnimator{4113e168 Starting com.android.provision} in Surface(name=Starting com.android.provision, identity=17)
+V/WindowManager(  366): Eval win Window{40f9dec0 u0 Starting com.android.provision}: isDrawn=true, isAnimating=true
+I/WindowManager(  366):   SURFACE SHOW (performShowLocked): Window{40f9dec0 u0 Starting com.android.provision}
+V/WindowManager(  366): Done at AppWindowToken{4114c828 token=Token{40d70fc8 ActivityRecord{40d99508 u0 com.android.provision/.DefaultActivity}}} -- full screen, return -1
+V/WindowManager(  366): Eval win Window{40f9dec0 u0 Starting com.android.provision}: isDrawn=true, isAnimating=true
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(48.0, 80.0, 528.0, 880.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x19 wanim=0x10302e9} lp.flags=0x1830118
+V/WindowManager(  366): Eval win Window{40f9dec0 u0 Starting com.android.provision}: isDrawn=true, isAnimating=true
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(48.0, 80.0, 528.0, 880.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x19 wanim=0x10302e9} lp.flags=0x1830118
+V/WindowManager(  366): Eval win Window{40f9dec0 u0 Starting com.android.provision}: isDrawn=true, isAnimating=true
+V/WindowManager(  366): setAppVisibility(Token{40d70fc8 ActivityRecord{40d99508 u0 com.android.provision/.DefaultActivity}}, visible=false): mNextAppTransition=8201 hidden=false hiddenRequested=false
+D/dalvikvm(  366): GC_FOR_ALLOC freed 418K, 29% free 5494K/7660K, paused 64ms, total 65ms
+V/WindowManager(  366): setAppVisibility(Token{40d70fc8 ActivityRecord{40d99508 u0 com.android.provision/.DefaultActivity}}, visible=false): mNextAppTransition=8201 hidden=false hiddenRequested=true
+I/ActivityManager(  366): Start proc com.google.android.setupwizard for activity com.google.android.setupwizard/.SetupWizardActivity: pid=1562 uid=10016 gids={50016, 3003, 1028}
+V/WindowManager(  366): Skipping set freeze of Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=true): mNextAppTransition=8201 hidden=true hiddenRequested=true
+V/WindowManager(  366): Skipping AppWindowToken{4114c828 token=Token{40d70fc8 ActivityRecord{40d99508 u0 com.android.provision/.DefaultActivity}}} -- going to hide
+V/WindowManager(  366): No app is requesting an orientation
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=true): mNextAppTransition=8201 hidden=true hiddenRequested=false
+V/WindowManager(  366): Eval win Window{40f9dec0 u0 Starting com.android.provision}: isDrawn=true, isAnimating=true
+E/Trace   ( 1562): error opening trace file: No such file or directory (2)
+W/BackupManagerService(  366): dataChanged but no participant pkg='com.android.providers.settings' uid=10011
+I/SetupWizard( 1562): SetupWizardActivity.onCreate(icicle) LTE == false userID=0
+V/NetworkMonitor( 1562): Starting NetworkMonitor
+D/SetupWizard( 1562): BaseActivity.onCreate() mIsFirstRun=true mAllNetworkSetupSkipped=true mIsSecondaryUser=false
+W/SetupWizard( 1562): skip disabling notfictions due to isHomeActivity() == false
+D/SetupWizard( 1562): DEVICE_PROVISIONED=true
+I/SetupWizard( 1562): SetupWizardActivity.onCreate() completed
+V/NetworkMonitor( 1562): Network is DOWN, Checkin has NOT succeeded, GLS is NOT connected
+V/NetworkMonitor( 1562): GLS onServiceConnected
+V/NetworkMonitor( 1562): Network is DOWN, Checkin has NOT succeeded, GLS IS connected
+W/BackupManagerService(  366): dataChanged but no participant pkg='com.android.providers.settings' uid=10033
+D/dalvikvm(  862): GC_CONCURRENT freed 279K, 17% free 2659K/3188K, paused 3ms+4ms, total 26ms
+E/MetadataRetrieverClient(  113): failed to extract an album art
+E/MetadataRetrieverClient(  113): failed to extract an album art
+E/MetadataRetrieverClient(  113): failed to extract an album art
+D/dalvikvm(  862): GC_CONCURRENT freed 419K, 21% free 2628K/3296K, paused 3ms+3ms, total 37ms
+E/MetadataRetrieverClient(  113): failed to extract an album art
+E/MetadataRetrieverClient(  113): failed to extract an album art
+E/MetadataRetrieverClient(  113): failed to extract an album art
+E/MetadataRetrieverClient(  113): failed to extract an album art
+D/dalvikvm(  862): GC_CONCURRENT freed 384K, 21% free 2634K/3296K, paused 3ms+5ms, total 28ms
+E/MetadataRetrieverClient(  113): failed to extract an album art
+E/MetadataRetrieverClient(  113): failed to extract an album art
+E/MetadataRetrieverClient(  113): failed to extract an album art
+W/MediaProvider(  862): no database for scanned volume external
+I/MediaProvider(  862): Upgrading media database from version 0 to 511, which will destroy all old data
+E/SQLiteLog(  862): (1) no such table: album_info
+W/MediaScanner(  862): Error opening directory '/storage/sdcard0/.android_secure/', skipping: Permission denied.
+D/dalvikvm(  862): GC_CONCURRENT freed 457K, 23% free 2561K/3316K, paused 3ms+3ms, total 25ms
+D/dalvikvm(  366): GC_EXPLICIT freed 185K, 27% free 5645K/7660K, paused 4ms+6ms, total 76ms
+D/dalvikvm(  862): GC_CONCURRENT freed 208K, 18% free 2739K/3316K, paused 3ms+4ms, total 26ms
+D/dalvikvm(  366): GC_EXPLICIT freed 196K, 28% free 5566K/7660K, paused 3ms+6ms, total 72ms
+D/dalvikvm(  862): GC_FOR_ALLOC freed 420K, 23% free 2692K/3496K, paused 23ms, total 25ms
+D/dalvikvm(  862): GC_FOR_ALLOC freed 284K, 25% free 2639K/3496K, paused 17ms, total 18ms
+V/WindowManager(  366): No app is requesting an orientation
+D/dalvikvm(  862): GC_FOR_ALLOC freed 251K, 24% free 2675K/3496K, paused 18ms, total 19ms
+D/dalvikvm(  862): GC_FOR_ALLOC freed 250K, 24% free 2662K/3496K, paused 18ms, total 19ms
+D/dalvikvm(  366): GC_EXPLICIT freed 118K, 28% free 5566K/7660K, paused 3ms+6ms, total 73ms
+D/dalvikvm(  862): GC_FOR_ALLOC freed 225K, 24% free 2667K/3496K, paused 17ms, total 20ms
+D/dalvikvm(  862): GC_FOR_ALLOC freed 232K, 24% free 2665K/3496K, paused 19ms, total 19ms
+D/dalvikvm(  862): GC_FOR_ALLOC freed 225K, 24% free 2670K/3496K, paused 19ms, total 19ms
+D/dalvikvm(  862): GC_FOR_ALLOC freed 225K, 24% free 2675K/3496K, paused 19ms, total 20ms
+D/dalvikvm(  862): GC_FOR_ALLOC freed 240K, 24% free 2690K/3496K, paused 18ms, total 19ms
+D/dalvikvm(  862): GC_FOR_ALLOC freed 249K, 24% free 2689K/3496K, paused 19ms, total 20ms
+D/dalvikvm(  862): GC_FOR_ALLOC freed 241K, 23% free 2694K/3496K, paused 17ms, total 18ms
+D/dalvikvm(  862): GC_FOR_ALLOC freed 248K, 23% free 2700K/3496K, paused 21ms, total 21ms
+D/dalvikvm(  366): GC_EXPLICIT freed 117K, 28% free 5566K/7660K, paused 3ms+7ms, total 71ms
+D/dalvikvm(  862): GC_FOR_ALLOC freed 239K, 23% free 2706K/3496K, paused 20ms, total 21ms
+E/MetadataRetrieverClient(  113): offset (0) bigger than file size (0)
+E/MediaScannerJNI(  862): An error occurred while scanning file '/storage/sdcard0/DCIM/Camera/VID_20121128_175348.mp4'.
+D/skia    (  862): --- SkImageDecoder::Factory returned null
+D/dalvikvm(  862): GC_CONCURRENT freed 269K, 20% free 2821K/3496K, paused 3ms+3ms, total 29ms
+D/dalvikvm(  366): GC_EXPLICIT freed 116K, 28% free 5566K/7660K, paused 4ms+6ms, total 73ms
+D/dalvikvm(  862): GC_CONCURRENT freed 265K, 16% free 2944K/3496K, paused 3ms+3ms, total 30ms
+D/dalvikvm(  366): GC_EXPLICIT freed 117K, 28% free 5566K/7660K, paused 4ms+5ms, total 71ms
+I/InputDispatcher(  366): Dropping event because there is no touched window.
+D/dalvikvm(  862): GC_CONCURRENT freed 311K, 16% free 3021K/3580K, paused 4ms+4ms, total 32ms
+D/dalvikvm(  366): GC_EXPLICIT freed 119K, 28% free 5566K/7660K, paused 4ms+7ms, total 75ms
+D/dalvikvm(  366): GC_EXPLICIT freed 117K, 28% free 5566K/7660K, paused 3ms+6ms, total 73ms
+D/dalvikvm(  862): GC_CONCURRENT freed 302K, 16% free 3104K/3656K, paused 3ms+4ms, total 34ms
+I/InputReader(  366): Reconfiguring input devices.  changes=0x00000010
+I/InputReader(  366): Reconfiguring input devices.  changes=0x00000010
+D/dalvikvm(  862): GC_CONCURRENT freed 440K, 19% free 3052K/3740K, paused 4ms+2ms, total 50ms
+D/dalvikvm(  862): GC_CONCURRENT freed 478K, 21% free 2963K/3740K, paused 3ms+3ms, total 30ms
+D/dalvikvm(  862): GC_CONCURRENT freed 383K, 21% free 2966K/3740K, paused 4ms+3ms, total 32ms
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/InputDispatcher(  366): Dropped event because of pending overdue app switch.
+I/ActivityManager(  366): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/com.android.launcher2.Launcher} from pid 366
+V/WindowManager(  366): Skipping AppWindowToken{40f2cf00 token=Token{410431a0 ActivityRecord{4108fdd0 u0 com.android.launcher/com.android.launcher2.Launcher}}} -- hidden on top
+V/WindowManager(  366): No app is requesting an orientation
+I/ActivityManager(  366): Start proc com.android.launcher for activity com.android.launcher/com.android.launcher2.Launcher: pid=1579 uid=10038 gids={50038, 1028}
+V/WindowManager(  366): Skipping set freeze of Token{410431a0 ActivityRecord{4108fdd0 u0 com.android.launcher/com.android.launcher2.Launcher}}
+V/WindowManager(  366): setAppVisibility(Token{410431a0 ActivityRecord{4108fdd0 u0 com.android.launcher/com.android.launcher2.Launcher}}, visible=true): mNextAppTransition=4104 hidden=true hiddenRequested=true
+V/WindowManager(  366): Done at AppWindowToken{40f2cf00 token=Token{410431a0 ActivityRecord{4108fdd0 u0 com.android.launcher/com.android.launcher2.Launcher}}} -- full screen, return -1
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=false): mNextAppTransition=4104 hidden=false hiddenRequested=false
+E/Trace   ( 1579): error opening trace file: No such file or directory (2)
+W/BackupManagerService(  366): dataChanged but no participant pkg='com.android.providers.settings' uid=10011
+D/dalvikvm( 1579): GC_CONCURRENT freed 205K, 16% free 2445K/2896K, paused 4ms+7ms, total 39ms
+D/dalvikvm( 1579): GC_FOR_ALLOC freed 185K, 15% free 2641K/3076K, paused 17ms, total 18ms
+I/dalvikvm-heap( 1579): Grow heap (frag case) to 4.192MB for 1440016-byte allocation
+V/WindowManager(  366): Done at AppWindowToken{40f2cf00 token=Token{410431a0 ActivityRecord{4108fdd0 u0 com.android.launcher/com.android.launcher2.Launcher}}} -- full screen, return -1
+V/WindowManager(  366): Resize reasons:  contentInsetsChanged=false visibleInsetsChanged=false surfaceResized=true configChanged=false
+V/WindowManager(  366): Orientation start waiting for draw mDrawState=DRAW_PENDING in Window{40d915a0 u0 com.android.systemui.ImageWallpaper}, surface Surface(name=com.android.systemui.ImageWallpaper, identity=7)
+V/WindowManager(  366): Resizing window Window{40d915a0 u0 com.android.systemui.ImageWallpaper} to 960.0x800.0
+V/WindowManager(  366): Reporting new frame to Window{40d915a0 u0 com.android.systemui.ImageWallpaper}: Rect(0, 0 - 960, 800)
+I/WindowManager(  366): Resizing Window{40d915a0 u0 com.android.systemui.ImageWallpaper} WITH DRAW PENDING
+D/dalvikvm( 1579): GC_FOR_ALLOC freed 3K, 10% free 4044K/4484K, paused 47ms, total 47ms
+D/dalvikvm(  609): GC_FOR_ALLOC freed 6272K, 57% free 5000K/11616K, paused 54ms, total 68ms
+I/dalvikvm-heap(  609): Grow heap (frag case) to 8.048MB for 3072016-byte allocation
+D/dalvikvm( 1579): GC_CONCURRENT freed 9K, 11% free 4035K/4484K, paused 8ms+2ms, total 47ms
+D/dalvikvm(  609): GC_CONCURRENT freed 9K, 32% free 7991K/11616K, paused 17ms+21ms, total 87ms
+D/dalvikvm( 1579): GC_FOR_ALLOC freed <1K, 11% free 4035K/4484K, paused 46ms, total 46ms
+I/dalvikvm-heap( 1579): Grow heap (frag case) to 5.133MB for 1000016-byte allocation
+D/dalvikvm( 1579): GC_FOR_ALLOC freed 0K, 9% free 5011K/5464K, paused 35ms, total 35ms
+D/dalvikvm( 1579): GC_CONCURRENT freed 0K, 9% free 5011K/5464K, paused 4ms+2ms, total 56ms
+V/WindowManager(  366): Done at AppWindowToken{40f2cf00 token=Token{410431a0 ActivityRecord{4108fdd0 u0 com.android.launcher/com.android.launcher2.Launcher}}} -- full screen, return -1
+V/WindowStateAnimator(  366): finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING WindowStateAnimator{40f822a0 com.android.systemui.ImageWallpaper} in Surface(name=com.android.systemui.ImageWallpaper, identity=7)
+W/Resources( 1579): Converting to int: TypedValue{t=0x3/d=0x12 "4" a=-1}
+W/Resources( 1579): Converting to int: TypedValue{t=0x3/d=0xf "1" a=-1}
+W/Resources( 1579): Converting to int: TypedValue{t=0x3/d=0x15 "2" a=-1}
+W/Resources( 1579): Converting to int: TypedValue{t=0x3/d=0x15 "2" a=-1}
+W/Launcher.LauncherProvider( 1579): Unable to add favorite: com.android.camera/com.android.camera.Camera
+W/Launcher.LauncherProvider( 1579): android.content.pm.PackageManager$NameNotFoundException: ComponentInfo{com.android.camera/com.android.camera.Camera}
+W/Launcher.LauncherProvider( 1579): 	at android.app.ApplicationPackageManager.getActivityInfo(ApplicationPackageManager.java:225)
+W/Launcher.LauncherProvider( 1579): 	at com.android.launcher2.LauncherProvider$DatabaseHelper.addAppShortcut(LauncherProvider.java:939)
+W/Launcher.LauncherProvider( 1579): 	at com.android.launcher2.LauncherProvider$DatabaseHelper.loadFavorites(LauncherProvider.java:843)
+W/Launcher.LauncherProvider( 1579): 	at com.android.launcher2.LauncherProvider$DatabaseHelper.access$000(LauncherProvider.java:233)
+W/Launcher.LauncherProvider( 1579): 	at com.android.launcher2.LauncherProvider.loadDefaultFavoritesIfNecessary(LauncherProvider.java:228)
+W/Launcher.LauncherProvider( 1579): 	at com.android.launcher2.LauncherModel$LoaderTask.loadWorkspace(LauncherModel.java:1228)
+W/Launcher.LauncherProvider( 1579): 	at com.android.launcher2.LauncherModel$LoaderTask.loadAndBindWorkspace(LauncherModel.java:972)
+W/Launcher.LauncherProvider( 1579): 	at com.android.launcher2.LauncherModel$LoaderTask.run(LauncherModel.java:1076)
+W/Launcher.LauncherProvider( 1579): 	at android.os.Handler.handleCallback(Handler.java:725)
+W/Launcher.LauncherProvider( 1579): 	at android.os.Handler.dispatchMessage(Handler.java:92)
+W/Launcher.LauncherProvider( 1579): 	at android.os.Looper.loop(Looper.java:137)
+W/Launcher.LauncherProvider( 1579): 	at android.os.HandlerThread.run(HandlerThread.java:60)
+V/WindowManager(  366): Screen status=true, current orientation=5, SensorEnabled=true
+V/WindowManager(  366): Done at AppWindowToken{40f2cf00 token=Token{410431a0 ActivityRecord{4108fdd0 u0 com.android.launcher/com.android.launcher2.Launcher}}} -- full screen, return 5
+V/WindowManager(  366): Application requested orientation 5, got rotation 0 which has compatible metrics
+I/WindowStateAnimator(  366): createSurface WindowStateAnimator{40dcc880 com.android.launcher/com.android.launcher2.Launcher}: mDrawState=DRAW_PENDING
+V/WindowManager(  366): Done at AppWindowToken{40f2cf00 token=Token{410431a0 ActivityRecord{4108fdd0 u0 com.android.launcher/com.android.launcher2.Launcher}}} -- full screen, return 5
+V/WindowManager(  366): Eval win Window{40eaa320 u0 com.android.launcher/com.android.launcher2.Launcher}: isDrawn=false, isAnimating=true
+V/WindowManager(  366): Not displayed: s=Surface(name=com.android.launcher/com.android.launcher2.Launcher, identity=18) pv=true mDrawState=1 ah=false th=false a=false
+V/WindowManager(  366): Resize reasons:  contentInsetsChanged=true visibleInsetsChanged=true surfaceResized=true configChanged=true
+V/WindowManager(  366): Resizing window Window{40eaa320 u0 com.android.launcher/com.android.launcher2.Launcher} to 480.0x800.0
+D/PhoneStatusBar(  609): disable: < expand icons alerts ticker system_info back* home recent clock search >
+D/BluetoothAdapter(  706): 1088707992: getState() :  mService = null. Returning STATE_OFF
+V/WindowManager(  366): Reporting new frame to Window{40eaa320 u0 com.android.launcher/com.android.launcher2.Launcher}: Rect(0, 0 - 480, 800)
+I/WindowManager(  366): Sending new config to window Window{40eaa320 u0 com.android.launcher/com.android.launcher2.Launcher}: 480.0x800.0 / {1.0 ?mcc?mnc en_US ldltr sw384dp w384dp h615dp 200dpi nrml long port finger -keyb/v/h -nav/h s.6 themeResource=null} / 0x0
+I/WindowManager(  366): Resizing Window{40eaa320 u0 com.android.launcher/com.android.launcher2.Launcher} WITH DRAW PENDING
+D/dalvikvm( 1579): GC_CONCURRENT freed 1980K, 37% free 3903K/6132K, paused 7ms+3ms, total 39ms
+D/libEGL  ( 1579): loaded /system/lib/egl/libEGL_adreno200.so
+D/libEGL  ( 1579): loaded /system/lib/egl/libGLESv1_CM_adreno200.so
+D/libEGL  ( 1579): loaded /system/lib/egl/libGLESv2_adreno200.so
+I/Adreno200-EGL( 1579): <qeglDrvAPI_eglInitialize:294>: EGL 1.4 QUALCOMM build: AU_LINUX_ANDROID_JB.04.01.01.00.036_msm8960_JB_CL2644550_release_AU (CL2644550)
+I/Adreno200-EGL( 1579): Build Date: 07/31/12 Tue
+I/Adreno200-EGL( 1579): Local Branch: 
+I/Adreno200-EGL( 1579): Remote Branch: quic/master
+I/Adreno200-EGL( 1579): Local Patches: NONE
+I/Adreno200-EGL( 1579): Reconstruct Branch: AU_LINUX_ANDROID_JB.04.01.01.00.036 +  NOTHING
+D/OpenGLRenderer( 1579): Enabling debug mode 0
+W/InputMethodManagerService(  366): Got RemoteException sending setActive(false) notification to pid 749 uid 10016
+D/dalvikvm( 1579): GC_FOR_ALLOC freed 40K, 36% free 3948K/6132K, paused 34ms, total 41ms
+D/dalvikvm(  366): GC_CONCURRENT freed 624K, 27% free 5661K/7660K, paused 11ms+20ms, total 169ms
+I/dalvikvm-heap( 1579): Grow heap (frag case) to 5.502MB for 1476496-byte allocation
+D/dalvikvm( 1579): GC_FOR_ALLOC freed 2K, 29% free 5387K/7576K, paused 44ms, total 44ms
+D/dalvikvm( 1579): GC_CONCURRENT freed 94K, 29% free 5453K/7576K, paused 6ms+12ms, total 71ms
+V/WindowStateAnimator(  366): finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING WindowStateAnimator{40dcc880 com.android.launcher/com.android.launcher2.Launcher} in Surface(name=com.android.launcher/com.android.launcher2.Launcher, identity=18)
+V/WindowManager(  366): Eval win Window{40eaa320 u0 com.android.launcher/com.android.launcher2.Launcher}: isDrawn=true, isAnimating=true
+V/WindowManager(  366): tokenMayBeDrawn: AppWindowToken{40f2cf00 token=Token{410431a0 ActivityRecord{4108fdd0 u0 com.android.launcher/com.android.launcher2.Launcher}}} freezingScreen=false mAppFreezing=false
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1910100 pfl=0x8 fmt=-2 wanim=0x1030295 vsysui=0x400} lp.flags=0x1910100
+I/WindowManager(  366):   SURFACE SHOW (performShowLocked): Window{40eaa320 u0 com.android.launcher/com.android.launcher2.Launcher}
+V/WindowManager(  366): Done at AppWindowToken{40f2cf00 token=Token{410431a0 ActivityRecord{4108fdd0 u0 com.android.launcher/com.android.launcher2.Launcher}}} -- full screen, return 5
+V/WindowManager(  366): Orientation not waiting for draw in Window{40d915a0 u0 com.android.systemui.ImageWallpaper}, surface Surface(name=com.android.systemui.ImageWallpaper, identity=7)
+I/ActivityManager(  366): Displayed com.android.launcher/com.android.launcher2.Launcher: +1s903ms (total +12s819ms)
+I/WindowManager(  366):   SURFACE SHOW (performShowLocked): Window{40d915a0 u0 com.android.systemui.ImageWallpaper}
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1910100 pfl=0x8 fmt=-2 wanim=0x1030295 vsysui=0x400} lp.flags=0x1910100
+D/dalvikvm( 1579): GC_FOR_ALLOC freed 521K, 23% free 5855K/7576K, paused 31ms, total 33ms
+D/dalvikvm( 1579): GC_FOR_ALLOC freed 509K, 19% free 6204K/7576K, paused 25ms, total 25ms
+D/dalvikvm( 1579): GC_FOR_ALLOC freed <1K, 12% free 6710K/7576K, paused 31ms, total 33ms
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1910100 pfl=0x8 fmt=-2 wanim=0x1030295 vsysui=0x400} lp.flags=0x1910100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1910100 pfl=0x8 fmt=-2 wanim=0x1030295 vsysui=0x400} lp.flags=0x1910100
+D/dalvikvm( 1579): GC_FOR_ALLOC freed 1955K, 36% free 5120K/7928K, paused 33ms, total 34ms
+I/dalvikvm-heap( 1579): Grow heap (frag case) to 6.647MB for 1476496-byte allocation
+D/dalvikvm( 1579): GC_FOR_ALLOC freed <1K, 18% free 6562K/7928K, paused 39ms, total 39ms
+D/dalvikvm( 1579): GC_CONCURRENT freed <1K, 18% free 6562K/7928K, paused 13ms+6ms, total 80ms
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1910100 pfl=0x8 fmt=-2 wanim=0x1030295 vsysui=0x400} lp.flags=0x1910100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1910100 pfl=0x8 fmt=-2 wanim=0x1030295 vsysui=0x400} lp.flags=0x1910100
+V/WindowManager(  366): setAppVisibility(Token{40ea0b98 ActivityRecord{40d46600 u0 com.google.android.setupwizard/.SetupWizardActivity}}, visible=false): mNextAppTransition=-1 hidden=true hiddenRequested=true
+D/dalvikvm(  862): GC_CONCURRENT freed 397K, 21% free 2970K/3740K, paused 51ms+2ms, total 139ms
+D/dalvikvm( 1579): GC_FOR_ALLOC freed 1606K, 34% free 5286K/7928K, paused 27ms, total 29ms
+I/dalvikvm-heap( 1579): Grow heap (frag case) to 6.810MB for 1476496-byte allocation
+D/dalvikvm( 1579): GC_FOR_ALLOC freed <1K, 16% free 6727K/7928K, paused 21ms, total 21ms
+V/WindowManager(  366): onProposedRotationChanged, rotation=0
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1910100 pfl=0x8 fmt=-2 wanim=0x1030295 vsysui=0x400} lp.flags=0x1910100
+V/WindowManager(  366): updateRotationUnchecked(alwaysSendConfiguration=false)
+V/WindowManager(  366): Application requested orientation 5, got rotation 0 which has compatible metrics
+D/dalvikvm( 1579): GC_CONCURRENT freed 7K, 16% free 6720K/7928K, paused 18ms+16ms, total 86ms
+D/dalvikvm( 1579): GC_FOR_ALLOC freed 1451K, 34% free 5279K/7928K, paused 26ms, total 27ms
+I/dalvikvm-heap( 1579): Grow heap (frag case) to 6.802MB for 1476496-byte allocation
+D/dalvikvm( 1579): GC_FOR_ALLOC freed <1K, 16% free 6721K/7928K, paused 23ms, total 23ms
+D/dalvikvm( 1579): GC_CONCURRENT freed 1K, 16% free 6721K/7928K, paused 14ms+13ms, total 54ms
+D/dalvikvm(  862): GC_CONCURRENT freed 391K, 21% free 2971K/3740K, paused 3ms+2ms, total 34ms
+D/Launcher.Model( 1579): going to save icon bitmap for info=ShortcutInfo(title=Peopleintent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.contacts/.activities.PeopleActivity }id=10 type=0 container=-101 screen=1 cellX=1 cellY=0 spanX=1 spanY=1 dropPos=null)
+D/Launcher.Model( 1579): going to save icon bitmap for info=ShortcutInfo(title=Galleryintent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.gallery3d/.app.Gallery }id=4 type=0 container=-100 screen=3 cellX=1 cellY=3 spanX=1 spanY=1 dropPos=null)
+D/Launcher.Model( 1579): going to save icon bitmap for info=ShortcutInfo(title=Browserintent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.browser/.BrowserActivity }id=14 type=0 container=-101 screen=4 cellX=4 cellY=0 spanX=1 spanY=1 dropPos=null)
+D/Launcher.Model( 1579): going to save icon bitmap for info=ShortcutInfo(title=Messagingintent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.mms/.ui.ConversationList }id=12 type=0 container=-101 screen=3 cellX=3 cellY=0 spanX=1 spanY=1 dropPos=null)
+D/Launcher.Model( 1579): going to save icon bitmap for info=ShortcutInfo(title=Phoneintent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.contacts/.activities.DialtactsActivity }id=8 type=0 container=-101 screen=0 cellX=0 cellY=0 spanX=1 spanY=1 dropPos=null)
+D/Launcher.Model( 1579): going to save icon bitmap for info=ShortcutInfo(title=Settingsintent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.settings/.Settings }id=6 type=0 container=-100 screen=3 cellX=2 cellY=3 spanX=1 spanY=1 dropPos=null)
+D/dalvikvm( 1579): GC_CONCURRENT freed 2174K, 29% free 5931K/8352K, paused 13ms+7ms, total 75ms
+D/dalvikvm(  862): GC_CONCURRENT freed 384K, 21% free 2974K/3740K, paused 4ms+35ms, total 292ms
+D/dalvikvm(  862): GC_CONCURRENT freed 747K, 31% free 2612K/3740K, paused 3ms+5ms, total 57ms
+I/ActivityManager(  366): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.settings/.Settings bnds=[245,520][345,645]} from pid 1579
+D/dalvikvm(  366): GC_EXPLICIT freed 411K, 26% free 5688K/7660K, paused 4ms+9ms, total 257ms
+D/dalvikvm(  366): WAIT_FOR_CONCURRENT_GC blocked 60ms
+I/dalvikvm-heap(  366): Grow heap (frag case) to 5.937MB for 148436-byte allocation
+D/dalvikvm(  366): GC_FOR_ALLOC freed 5K, 26% free 5827K/7808K, paused 55ms, total 56ms
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#1910100 pfl=0x8 fmt=-2 wanim=0x1030295 vsysui=0x400} lp.flags=0x1910100
+I/WindowStateAnimator(  366): createSurface WindowStateAnimator{410d7110 Starting com.android.settings}: mDrawState=DRAW_PENDING
+V/WindowManager(  366): Skipping AppWindowToken{40e74968 token=Token{40ff5810 ActivityRecord{40d5b178 u0 com.android.settings/.Settings}}} -- hidden on top
+V/WindowManager(  366): Done at AppWindowToken{40f2cf00 token=Token{410431a0 ActivityRecord{4108fdd0 u0 com.android.launcher/com.android.launcher2.Launcher}}} -- full screen, return 5
+V/WindowManager(  366): Resize reasons:  contentInsetsChanged=true visibleInsetsChanged=true surfaceResized=true configChanged=true
+V/WindowManager(  366): Resizing window Window{40e8c9c0 u0 Starting com.android.settings} to 480.0x800.0
+V/WindowManager(  366): Reporting new frame to Window{40e8c9c0 u0 Starting com.android.settings}: Rect(0, 0 - 480, 800)
+I/WindowManager(  366): Sending new config to window Window{40e8c9c0 u0 Starting com.android.settings}: 480.0x800.0 / {1.0 ?mcc?mnc en_US ldltr sw384dp w384dp h615dp 200dpi nrml long port finger -keyb/v/h -nav/h s.6 themeResource=null} / 0x0
+I/WindowManager(  366): Resizing Window{40e8c9c0 u0 Starting com.android.settings} WITH DRAW PENDING
+V/WindowManager(  366): Screen status=true, current orientation=-1, SensorEnabled=true
+V/WindowManager(  366): Skipping set freeze of Token{40ff5810 ActivityRecord{40d5b178 u0 com.android.settings/.Settings}}
+V/WindowManager(  366): setAppVisibility(Token{40ff5810 ActivityRecord{40d5b178 u0 com.android.settings/.Settings}}, visible=true): mNextAppTransition=4104 hidden=true hiddenRequested=true
+V/WindowManager(  366): Done at AppWindowToken{40e74968 token=Token{40ff5810 ActivityRecord{40d5b178 u0 com.android.settings/.Settings}}} -- full screen, return -1
+V/WindowManager(  366): Application requested orientation -1, got rotation 0 which has compatible metrics
+V/WindowManager(  366): setAppVisibility(Token{410431a0 ActivityRecord{4108fdd0 u0 com.android.launcher/com.android.launcher2.Launcher}}, visible=false): mNextAppTransition=4104 hidden=false hiddenRequested=false
+V/WindowManager(  366): Eval win Window{40e8c9c0 u0 Starting com.android.settings}: isDrawn=false, isAnimating=true
+V/WindowManager(  366): Not displayed: s=Surface(name=Starting com.android.settings, identity=19) pv=true mDrawState=1 ah=false th=false a=true
+V/WindowStateAnimator(  366): finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING WindowStateAnimator{410d7110 Starting com.android.settings} in Surface(name=Starting com.android.settings, identity=19)
+V/WindowManager(  366): Eval win Window{40e8c9c0 u0 Starting com.android.settings}: isDrawn=true, isAnimating=true
+I/WindowManager(  366):   SURFACE SHOW (performShowLocked): Window{40e8c9c0 u0 Starting com.android.settings}
+V/WindowManager(  366): Done at AppWindowToken{40e74968 token=Token{40ff5810 ActivityRecord{40d5b178 u0 com.android.settings/.Settings}}} -- full screen, return -1
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x19 wanim=0x1030295} lp.flags=0x1830118
+V/WindowManager(  366): Eval win Window{40e8c9c0 u0 Starting com.android.settings}: isDrawn=true, isAnimating=true
+D/BluetoothAdapter(  706): 1088707992: getState() :  mService = null. Returning STATE_OFF
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(3.983307, 8.454346, 483.9833, 808.45435)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x19 wanim=0x1030295} lp.flags=0x1830118
+V/WindowManager(  366): Done at AppWindowToken{40e74968 token=Token{40ff5810 ActivityRecord{40d5b178 u0 com.android.settings/.Settings}}} -- full screen, return -1
+V/WindowManager(  366): Eval win Window{40e8c9c0 u0 Starting com.android.settings}: isDrawn=true, isAnimating=true
+I/WindowStateAnimator(  366): createSurface WindowStateAnimator{410ee120 com.android.settings/com.android.settings.Settings}: mDrawState=DRAW_PENDING
+V/WindowManager(  366): Done at AppWindowToken{40e74968 token=Token{40ff5810 ActivityRecord{40d5b178 u0 com.android.settings/.Settings}}} -- full screen, return -1
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x19 wanim=0x1030295} lp.flags=0x1830118
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x19 wanim=0x1030295} lp.flags=0x1830118
+V/WindowManager(  366): Eval win Window{40e8c9c0 u0 Starting com.android.settings}: isDrawn=true, isAnimating=true
+V/WindowManager(  366): Eval win Window{410be240 u0 com.android.settings/com.android.settings.Settings}: isDrawn=false, isAnimating=true
+V/WindowManager(  366): Not displayed: s=Surface(name=com.android.settings/com.android.settings.Settings, identity=20) pv=true mDrawState=1 ah=false th=false a=false
+V/WindowManager(  366): Resize reasons:  contentInsetsChanged=true visibleInsetsChanged=true surfaceResized=false configChanged=true
+V/WindowManager(  366): Resizing window Window{410be240 u0 com.android.settings/com.android.settings.Settings} to 480.0x800.0
+V/WindowManager(  366): Reporting new frame to Window{410be240 u0 com.android.settings/com.android.settings.Settings}: Rect(0, 0 - 480, 800)
+I/WindowManager(  366): Sending new config to window Window{410be240 u0 com.android.settings/com.android.settings.Settings}: 480.0x800.0 / {1.0 ?mcc?mnc en_US ldltr sw384dp w384dp h615dp 200dpi nrml long port finger -keyb/v/h -nav/h s.6 themeResource=null} / 0x0
+I/WindowManager(  366): Resizing Window{410be240 u0 com.android.settings/com.android.settings.Settings} WITH DRAW PENDING
+V/WindowManager(  366): Eval win Window{40e8c9c0 u0 Starting com.android.settings}: isDrawn=true, isAnimating=false
+V/WindowManager(  366): Eval win Window{410be240 u0 com.android.settings/com.android.settings.Settings}: isDrawn=false, isAnimating=false
+V/WindowManager(  366): Not displayed: s=Surface(name=com.android.settings/com.android.settings.Settings, identity=20) pv=true mDrawState=1 ah=false th=false a=false
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x19 wanim=0x1030295} lp.flags=0x1830118
+V/WindowManager(  366): Eval win Window{40e8c9c0 u0 Starting com.android.settings}: isDrawn=true, isAnimating=false
+V/WindowManager(  366): Eval win Window{410be240 u0 com.android.settings/com.android.settings.Settings}: isDrawn=false, isAnimating=false
+V/WindowManager(  366): Not displayed: s=Surface(name=com.android.settings/com.android.settings.Settings, identity=20) pv=true mDrawState=1 ah=false th=false a=false
+D/WifiService(  366): setWifiEnabled: true pid=706, uid=1000
+D/dalvikvm(  706): GC_CONCURRENT freed 255K, 18% free 3353K/4060K, paused 6ms+9ms, total 50ms
+D/BluetoothAdapter(  706): 1088707992: getState() :  mService = null. Returning STATE_OFF
+W/BackupManagerService(  366): dataChanged but no participant pkg='com.android.providers.settings' uid=10011
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x19 wanim=0x1030295} lp.flags=0x1830118
+V/WindowStateAnimator(  366): finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING WindowStateAnimator{410ee120 com.android.settings/com.android.settings.Settings} in Surface(name=com.android.settings/com.android.settings.Settings, identity=20)
+V/WindowManager(  366): Eval win Window{40e8c9c0 u0 Starting com.android.settings}: isDrawn=true, isAnimating=false
+V/WindowManager(  366): Eval win Window{410be240 u0 com.android.settings/com.android.settings.Settings}: isDrawn=true, isAnimating=false
+V/WindowManager(  366): tokenMayBeDrawn: AppWindowToken{40e74968 token=Token{40ff5810 ActivityRecord{40d5b178 u0 com.android.settings/.Settings}}} freezingScreen=false mAppFreezing=false
+I/WindowManager(  366):   SURFACE SHOW (performShowLocked): Window{410be240 u0 com.android.settings/com.android.settings.Settings}
+I/ActivityManager(  366): Displayed com.android.settings/.Settings: +807ms
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=3 fl=#1830118 pfl=0x19 wanim=0x1030295} lp.flags=0x1830118
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295} lp.flags=0x1810100
+V/WindowManager(  366): setAppVisibility(Token{410431a0 ActivityRecord{4108fdd0 u0 com.android.launcher/com.android.launcher2.Launcher}}, visible=false): mNextAppTransition=-1 hidden=true hiddenRequested=true
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295} lp.flags=0x1810100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295} lp.flags=0x1810100
+D/dalvikvm(  862): GC_CONCURRENT freed 161K, 25% free 2835K/3740K, paused 3ms+4ms, total 27ms
+I/SampleTable(  113): There are reordered frames present.
+I/SampleTable(  113): There are reordered frames present.
+D/dalvikvm(  366): GC_EXPLICIT freed 245K, 26% free 5834K/7804K, paused 4ms+23ms, total 108ms
+I/ActivityManager(  366): START u0 {act=android.intent.action.MAIN cmp=com.android.settings/.SubSettings (has extras)} from pid 706
+D/dalvikvm(  366): GC_FOR_ALLOC freed 159K, 27% free 5740K/7804K, paused 54ms, total 55ms
+I/dalvikvm-heap(  366): Grow heap (frag case) to 5.987MB for 148436-byte allocation
+D/dalvikvm(  366): GC_FOR_ALLOC freed <1K, 26% free 5884K/7952K, paused 55ms, total 55ms
+V/WindowManager(  366): Skipping set freeze of Token{40d3c460 ActivityRecord{40d17f58 u0 com.android.settings/.SubSettings}}
+V/WindowManager(  366): setAppVisibility(Token{40d3c460 ActivityRecord{40d17f58 u0 com.android.settings/.SubSettings}}, visible=true): mNextAppTransition=4102 hidden=true hiddenRequested=true
+V/WindowManager(  366): Done at AppWindowToken{4116bbe0 token=Token{40d3c460 ActivityRecord{40d17f58 u0 com.android.settings/.SubSettings}}} -- full screen, return -1
+V/WindowManager(  366): setAppVisibility(Token{40ff5810 ActivityRecord{40d5b178 u0 com.android.settings/.Settings}}, visible=false): mNextAppTransition=4102 hidden=false hiddenRequested=false
+D/dalvikvm(  706): GC_CONCURRENT freed 247K, 13% free 3546K/4060K, paused 8ms+14ms, total 64ms
+I/WindowStateAnimator(  366): createSurface WindowStateAnimator{41147140 com.android.settings/com.android.settings.SubSettings}: mDrawState=DRAW_PENDING
+V/WindowManager(  366): Done at AppWindowToken{4116bbe0 token=Token{40d3c460 ActivityRecord{40d17f58 u0 com.android.settings/.SubSettings}}} -- full screen, return -1
+V/WindowManager(  366): Eval win Window{40ec18d8 u0 com.android.settings/com.android.settings.SubSettings}: isDrawn=false, isAnimating=true
+V/WindowManager(  366): Not displayed: s=Surface(name=com.android.settings/com.android.settings.SubSettings, identity=21) pv=true mDrawState=1 ah=false th=false a=false
+V/WindowManager(  366): Resize reasons:  contentInsetsChanged=true visibleInsetsChanged=true surfaceResized=true configChanged=true
+V/WindowManager(  366): Resizing window Window{40ec18d8 u0 com.android.settings/com.android.settings.SubSettings} to 480.0x800.0
+V/WindowManager(  366): Reporting new frame to Window{40ec18d8 u0 com.android.settings/com.android.settings.SubSettings}: Rect(0, 0 - 480, 800)
+I/WindowManager(  366): Sending new config to window Window{40ec18d8 u0 com.android.settings/com.android.settings.SubSettings}: 480.0x800.0 / {1.0 ?mcc?mnc en_US ldltr sw384dp w384dp h615dp 200dpi nrml long port finger -keyb/v/h -nav/h s.6 themeResource=null} / 0x0
+I/WindowManager(  366): Resizing Window{40ec18d8 u0 com.android.settings/com.android.settings.SubSettings} WITH DRAW PENDING
+I/ActivityManager(  366): Displayed com.android.settings/.SubSettings: +396ms
+V/WindowStateAnimator(  366): finishDrawingLocked: mDrawState=COMMIT_DRAW_PENDING WindowStateAnimator{41147140 com.android.settings/com.android.settings.SubSettings} in Surface(name=com.android.settings/com.android.settings.SubSettings, identity=21)
+V/WindowManager(  366): Eval win Window{40ec18d8 u0 com.android.settings/com.android.settings.SubSettings}: isDrawn=true, isAnimating=true
+V/WindowManager(  366): tokenMayBeDrawn: AppWindowToken{4116bbe0 token=Token{40d3c460 ActivityRecord{40d17f58 u0 com.android.settings/.SubSettings}}} freezingScreen=false mAppFreezing=false
+I/WindowManager(  366):   SURFACE SHOW (performShowLocked): Window{40ec18d8 u0 com.android.settings/com.android.settings.SubSettings}
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295} lp.flags=0x1810100
+V/WindowManager(  366): Done at AppWindowToken{4116bbe0 token=Token{40d3c460 ActivityRecord{40d17f58 u0 com.android.settings/.SubSettings}}} -- full screen, return -1
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(48.0, 80.0, 528.0, 880.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295} lp.flags=0x1810100
+V/WindowManager(  366): Done at AppWindowToken{4116bbe0 token=Token{40d3c460 ActivityRecord{40d17f58 u0 com.android.settings/.SubSettings}}} -- full screen, return -1
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.8765106, 1.4608765, 480.87653, 801.4609)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295} lp.flags=0x1810100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295} lp.flags=0x1810100
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295} lp.flags=0x1810100
+V/WindowManager(  366): setAppVisibility(Token{40ff5810 ActivityRecord{40d5b178 u0 com.android.settings/.Settings}}, visible=false): mNextAppTransition=-1 hidden=true hiddenRequested=true
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295} lp.flags=0x1810100
+V/WindowManager(  366): Done at AppWindowToken{4116bbe0 token=Token{40d3c460 ActivityRecord{40d17f58 u0 com.android.settings/.SubSettings}}} -- full screen, return -1
+D/dalvikvm(  862): GC_CONCURRENT freed 334K, 23% free 2887K/3740K, paused 3ms+5ms, total 30ms
+D/dalvikvm(  706): GC_CONCURRENT freed 195K, 11% free 3750K/4192K, paused 7ms+4ms, total 49ms
+V/WindowManager(  366): onProposedRotationChanged, rotation=0
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#110 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295} lp.flags=0x1810100
+V/WindowManager(  366): updateRotationUnchecked(alwaysSendConfiguration=false)
+V/WindowManager(  366): Application requested orientation -1, got rotation 0 which has compatible metrics
+D/CommandListener(  107): Clearing all IP addresses on wlan0
+D/WifiService(  366): setWifiEnabled: false pid=706, uid=1000
+D/ConnectivityService(  366): ConnectivityChange for WIFI: DISCONNECTED/DISCONNECTED
+I/wpa_supplicant( 1440): wlan0: CTRL-EVENT-TERMINATING 
+D/BluetoothAdapter(  706): 1088707992: getState() :  mService = null. Returning STATE_OFF
+D/dalvikvm(  366): GC_EXPLICIT freed 274K, 26% free 5917K/7952K, paused 12ms+7ms, total 203ms
+D/ConnectivityService(  366): Attempting to switch to mobile
+D/ConnectivityService(  366): Attempting to switch to BLUETOOTH_TETHER
+V/NetworkMonitor( 1562): Intent { act=android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE flg=0x8000010 (has extras) }
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295} lp.flags=0x1810100
+V/WindowManager(  366): Done at AppWindowToken{4116bbe0 token=Token{40d3c460 ActivityRecord{40d17f58 u0 com.android.settings/.SubSettings}}} -- full screen, return -1
+V/NetworkMonitor( 1562): Network is DOWN, Checkin HAS succeeded, GLS IS connected
+W/Netd    (  107): No subsystem found in netlink event
+D/NetlinkEvent(  107): Unexpected netlink message. type=0x11
+V/WindowManager(  366): onProposedRotationChanged, rotation=0
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295} lp.flags=0x1810100
+V/WindowManager(  366): updateRotationUnchecked(alwaysSendConfiguration=false)
+V/WindowManager(  366): Application requested orientation -1, got rotation 0 which has compatible metrics
+D/dalvikvm(  862): GC_CONCURRENT freed 306K, 21% free 2965K/3740K, paused 3ms+6ms, total 31ms
+D/dalvikvm(  366): GC_EXPLICIT freed 194K, 26% free 5904K/7952K, paused 3ms+6ms, total 74ms
+D/BluetoothAdapter(  706): 1088707992: getState() :  mService = null. Returning STATE_OFF
+D/dalvikvm(  862): GC_CONCURRENT freed 301K, 19% free 3048K/3740K, paused 4ms+4ms, total 32ms
+D/dalvikvm(  366): GC_EXPLICIT freed 144K, 26% free 5897K/7952K, paused 4ms+6ms, total 74ms
+D/dalvikvm(  366): GC_EXPLICIT freed 117K, 26% free 5896K/7952K, paused 5ms+7ms, total 73ms
+D/dalvikvm(  862): GC_CONCURRENT freed 300K, 17% free 3135K/3740K, paused 3ms+6ms, total 34ms
+D/Tethering(  366): MasterInitialState.processMessage what=3
+V/NetworkMonitor( 1562): Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x8000010 (has extras) }
+I/ActivityManager(  366): Start proc com.fuss.stats for broadcast com.fuss.stats/.ReportingServiceManager: pid=1610 uid=10000 gids={50000, 3003, 1028}
+V/NetworkMonitor( 1562): Network is DOWN, Checkin HAS succeeded, GLS IS connected
+E/Trace   ( 1610): error opening trace file: No such file or directory (2)
+D/FussStats( 1610): CONNECTIVITY_ACTION: noConnectivity = true
+I/ActivityManager(  366): Start proc com.google.android.apps.uploader for broadcast com.google.android.apps.uploader/com.google.android.picasasync.ConnectivityReceiver: pid=1624 uid=10032 gids={50032, 3003, 1015, 1028}
+E/Trace   ( 1624): error opening trace file: No such file or directory (2)
+D/dalvikvm( 1624): GC_CONCURRENT freed 387K, 22% free 2273K/2908K, paused 9ms+2ms, total 30ms
+D/dalvikvm(  366): GC_EXPLICIT freed 142K, 26% free 5908K/7952K, paused 3ms+6ms, total 78ms
+I/System  (  366): Loaded time zone names for  in 231ms (223ms in ICU)
+I/System  (  366): Loaded time zone names for en_US in 166ms (161ms in ICU)
+D/ConnectivityService(  366): handleInetConditionChange: no active default network - ignore
+I/ActivityManager(  366): No longer want com.google.android.partnersetup (pid 825): empty #17
+E/GTalkService(  846): getAccountForAndroidId: get ANDROID_ID returned 0!
+D/ConnectivityService(  366): handleInetConditionChange: no active default network - ignore
+D/PicasaUploader( 1624): System upgrade from null to 4.2.2
+D/PicasaUploader( 1624):    wifiOnlyPhoto changed to true
+D/PicasaUploader( 1624):    wifiOnlyVideo changed to true
+D/PicasaUploader( 1624):    syncOnBattery changed to true
+D/PicasaUploaderSync( 1624): sync account database
+D/PicasaUploader( 1624): set fsid=1195493241
+D/dalvikvm(  687): GC_CONCURRENT freed 253K, 16% free 2679K/3176K, paused 3ms+6ms, total 35ms
+D/PicasaUploaderSync( 1624): accounts in DB=0
+D/PicasaUploaderSyncManager( 1624): background data: true
+D/dalvikvm( 1624): GC_CONCURRENT freed 333K, 22% free 2325K/2948K, paused 3ms+2ms, total 20ms
+D/PicasaUploaderSyncManager( 1624): battery info: true
+D/dalvikvm(  862): GC_CONCURRENT freed 311K, 15% free 3211K/3772K, paused 3ms+7ms, total 38ms
+D/PicasaUploaderSync( 1624): sync account database
+D/PicasaUploaderSync( 1624): accounts in DB=0
+D/dalvikvm(  687): GC_CONCURRENT freed 402K, 20% free 2668K/3316K, paused 3ms+9ms, total 31ms
+D/dalvikvm(  366): GC_EXPLICIT freed 462K, 25% free 6001K/7952K, paused 4ms+5ms, total 81ms
+D/dalvikvm(  687): GC_CONCURRENT freed 403K, 20% free 2679K/3328K, paused 3ms+10ms, total 41ms
+D/dalvikvm(  687): GC_CONCURRENT freed 394K, 20% free 2682K/3328K, paused 3ms+11ms, total 33ms
+D/dalvikvm(  687): GC_CONCURRENT freed 387K, 20% free 2687K/3328K, paused 3ms+7ms, total 27ms
+D/dalvikvm(  862): GC_CONCURRENT freed 303K, 15% free 3297K/3848K, paused 3ms+4ms, total 40ms
+D/dalvikvm(  687): GC_CONCURRENT freed 390K, 20% free 2686K/3328K, paused 3ms+6ms, total 26ms
+D/dalvikvm(  862): GC_CONCURRENT freed 497K, 19% free 3192K/3936K, paused 3ms+2ms, total 39ms
+D/dalvikvm(  687): GC_CONCURRENT freed 393K, 20% free 2685K/3328K, paused 3ms+9ms, total 30ms
+D/dalvikvm(  687): GC_CONCURRENT freed 384K, 20% free 2687K/3328K, paused 3ms+5ms, total 27ms
+D/dalvikvm(  862): GC_CONCURRENT freed 396K, 20% free 3186K/3936K, paused 3ms+7ms, total 53ms
+D/dalvikvm(  687): GC_CONCURRENT freed 410K, 20% free 2688K/3344K, paused 3ms+10ms, total 39ms
+D/dalvikvm(  687): GC_CONCURRENT freed 386K, 20% free 2687K/3344K, paused 3ms+2ms, total 32ms
+D/dalvikvm(  862): GC_CONCURRENT freed 377K, 19% free 3198K/3944K, paused 17ms+5ms, total 59ms
+D/dalvikvm(  862): GC_CONCURRENT freed 542K, 23% free 3043K/3944K, paused 4ms+2ms, total 54ms
+D/dalvikvm(  862): GC_CONCURRENT freed 402K, 23% free 3049K/3944K, paused 3ms+3ms, total 40ms
+D/dalvikvm(  862): GC_CONCURRENT freed 382K, 23% free 3052K/3944K, paused 3ms+2ms, total 30ms
+D/dalvikvm(  862): GC_CONCURRENT freed 382K, 23% free 3057K/3944K, paused 5ms+5ms, total 37ms
+D/dalvikvm(  862): GC_CONCURRENT freed 382K, 23% free 3062K/3944K, paused 3ms+4ms, total 40ms
+D/dalvikvm(  366): GC_EXPLICIT freed 112K, 25% free 5989K/7952K, paused 3ms+7ms, total 74ms
+D/dalvikvm(  862): GC_CONCURRENT freed 603K, 28% free 2845K/3944K, paused 3ms+3ms, total 31ms
+D/dalvikvm(  366): GC_EXPLICIT freed 87K, 25% free 5988K/7952K, paused 3ms+6ms, total 73ms
+D/dalvikvm(  366): GC_EXPLICIT freed 87K, 25% free 5988K/7952K, paused 3ms+6ms, total 74ms
+D/dalvikvm(  862): GC_CONCURRENT freed 263K, 25% free 2966K/3944K, paused 3ms+5ms, total 33ms
+D/dalvikvm(  366): GC_EXPLICIT freed 86K, 25% free 5988K/7952K, paused 3ms+6ms, total 73ms
+D/dalvikvm(  862): GC_CONCURRENT freed 308K, 23% free 3044K/3944K, paused 3ms+4ms, total 39ms
+D/dalvikvm(  366): GC_EXPLICIT freed 87K, 25% free 5988K/7952K, paused 4ms+7ms, total 73ms
+D/dalvikvm(  862): GC_CONCURRENT freed 301K, 21% free 3128K/3944K, paused 5ms+4ms, total 35ms
+D/dalvikvm(  366): GC_EXPLICIT freed 88K, 25% free 5988K/7952K, paused 4ms+6ms, total 74ms
+D/dalvikvm(  862): GC_CONCURRENT freed 301K, 19% free 3211K/3944K, paused 3ms+6ms, total 34ms
+D/dalvikvm(  366): GC_EXPLICIT freed 87K, 25% free 5988K/7952K, paused 4ms+6ms, total 72ms
+D/dalvikvm(  366): GC_EXPLICIT freed 86K, 25% free 5988K/7952K, paused 4ms+6ms, total 74ms
+D/dalvikvm(  862): GC_CONCURRENT freed 303K, 17% free 3296K/3944K, paused 3ms+5ms, total 35ms
+D/dalvikvm(  366): GC_EXPLICIT freed 87K, 25% free 5988K/7952K, paused 4ms+6ms, total 75ms
+D/dalvikvm(  862): GC_CONCURRENT freed 310K, 15% free 3375K/3944K, paused 3ms+4ms, total 36ms
+D/dalvikvm(  862): GC_CONCURRENT freed 468K, 18% free 3318K/4036K, paused 3ms+4ms, total 44ms
+D/dalvikvm(  862): GC_CONCURRENT freed 445K, 19% free 3279K/4036K, paused 3ms+4ms, total 44ms
+D/dalvikvm(  862): GC_CONCURRENT freed 397K, 19% free 3291K/4036K, paused 3ms+2ms, total 40ms
+D/dalvikvm(  862): GC_CONCURRENT freed 585K, 24% free 3114K/4048K, paused 3ms+3ms, total 42ms
+D/dalvikvm(  862): GC_CONCURRENT freed 403K, 23% free 3119K/4048K, paused 3ms+2ms, total 38ms
+D/dalvikvm(  862): GC_CONCURRENT freed 401K, 23% free 3128K/4048K, paused 3ms+2ms, total 41ms
+D/dalvikvm(  862): GC_CONCURRENT freed 406K, 23% free 3129K/4048K, paused 3ms+4ms, total 40ms
+D/dalvikvm(  862): GC_CONCURRENT freed 383K, 23% free 3133K/4048K, paused 3ms+2ms, total 31ms
+D/dalvikvm(  366): GC_EXPLICIT freed 87K, 25% free 5988K/7952K, paused 3ms+6ms, total 73ms
+D/dalvikvm(  862): GC_CONCURRENT freed 653K, 30% free 2865K/4048K, paused 3ms+3ms, total 31ms
+D/WifiService(  366): setWifiEnabled: true pid=706, uid=1000
+D/BluetoothAdapter(  706): 1088707992: getState() :  mService = null. Returning STATE_OFF
+D/dalvikvm(  366): GC_EXPLICIT freed 112K, 25% free 5990K/7952K, paused 3ms+6ms, total 73ms
+D/dalvikvm(  862): GC_CONCURRENT freed 231K, 26% free 3019K/4048K, paused 3ms+4ms, total 31ms
+D/dalvikvm(  366): GC_EXPLICIT freed 88K, 25% free 5988K/7952K, paused 4ms+5ms, total 74ms
+D/dalvikvm(  862): GC_CONCURRENT freed 302K, 24% free 3101K/4048K, paused 3ms+3ms, total 31ms
+D/dalvikvm(  366): GC_EXPLICIT freed 87K, 25% free 5988K/7952K, paused 3ms+7ms, total 73ms
+D/dalvikvm(  366): GC_EXPLICIT freed 86K, 25% free 5988K/7952K, paused 3ms+5ms, total 73ms
+D/dalvikvm(  862): GC_CONCURRENT freed 300K, 22% free 3187K/4048K, paused 4ms+5ms, total 37ms
+D/SoftapController(  107): Softap fwReload - Ok
+D/CommandListener(  107): Setting iface cfg
+D/CommandListener(  107): Trying to bring down wlan0
+E/WifiHW  (  366): Unable to open connection to supplicant on "wlan0": No such file or directory
+I/wpa_supplicant( 1653): Successfully initialized wpa_supplicant
+D/dalvikvm(  366): GC_EXPLICIT freed 110K, 25% free 5995K/7952K, paused 11ms+6ms, total 82ms
+D/dalvikvm(  862): GC_CONCURRENT freed 309K, 20% free 3263K/4048K, paused 3ms+5ms, total 36ms
+E/WifiConfigStore(  366): Error parsing configurationjava.io.FileNotFoundException: /data/misc/wifi/ipconfig.txt: open failed: ENOENT (No such file or directory)
+D/BluetoothAdapter(  706): 1088707992: getState() :  mService = null. Returning STATE_OFF
+D/dalvikvm(  366): GC_EXPLICIT freed 127K, 25% free 5994K/7952K, paused 4ms+6ms, total 77ms
+D/WindowManager(  366): frame: Rect(0, 0 - 480, 800) shown frame: RectF(0.0, 0.0, 480.0, 800.0)
+D/WindowManager(  366): attr: WM.LayoutParams{(0,0)(fillxfill) sim=#10 ty=1 fl=#1810100 pfl=0x8 wanim=0x1030295} lp.flags=0x1810100
+V/WindowManager(  366): Done at AppWindowToken{4116bbe0 token=Token{40d3c460 ActivityRecord{40d17f58 u0 com.android.settings/.SubSettings}}} -- full screen, return -1
+D/dalvikvm(  862): GC_CONCURRENT freed 303K, 18% free 3347K/4048K, paused 3ms+5ms, total 66ms
+D/dalvikvm(  366): GC_EXPLICIT freed 115K, 25% free 5998K/7952K, paused 3ms+6ms, total 74ms
+D/dalvikvm(  862): GC_CONCURRENT freed 301K, 16% free 3433K/4048K, paused 4ms+5ms, total 39ms
+D/dalvikvm(  366): GC_EXPLICIT freed 89K, 25% free 5995K/7952K, paused 3ms+12ms, total 121ms
+D/dalvikvm(  862): GC_CONCURRENT freed 304K, 14% free 3515K/4068K, paused 4ms+4ms, total 39ms
+D/dalvikvm(  862): GC_CONCURRENT freed 541K, 19% free 3383K/4172K, paused 4ms+4ms, total 46ms
+D/dalvikvm(  862): GC_CONCURRENT freed 399K, 19% free 3393K/4172K, paused 3ms+4ms, total 44ms
+D/dalvikvm(  862): GC_CONCURRENT freed 380K, 19% free 3403K/4172K, paused 3ms+12ms, total 45ms
