@@ -34,12 +34,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
  	gps.htcleo
 
-# Misc
-PRODUCT_PACKAGES += \
-	libgps \
-	leo-reference-ril \
-	libhtc_ril_wrapper
-
 # Vold
 PRODUCT_COPY_FILES += \
 	device/htc/leo/vold.fstab:system/etc/vold.fstab
