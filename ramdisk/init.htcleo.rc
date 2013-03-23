@@ -184,14 +184,13 @@ on boot
     setprop ro.ril.fd.scron.timeout 4
     setprop ro.ril.fd.scroff.timeout 3
 
-# Modules
-    insmod /system/lib/modules/cifs.ko
-    insmod /system/lib/modules/fuse.ko
-    insmod /system/lib/modules/kineto_gan.ko
-    insmod /system/lib/modules/tun.ko
-    insmod /system/lib/modules/zram.ko
+    # GPRS class
+    setprop ro.ril.gprsclass 10
+
+    symlink /system/vendor/firmware/fw_bcmdhd.bin /vendor/firmware/fw_bcmdhd.bin
+    symlink /system/vendor/firmware/fw_bcmdhd_apsta.bin /vendor/firmware/fw_bcmdhd_apsta.bin
     
-# Services start here
+# compass/accelerometer daemon
 service akmd /system/bin/akmd
     class main
     user compass

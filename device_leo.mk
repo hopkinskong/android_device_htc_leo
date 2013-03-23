@@ -70,6 +70,7 @@ PRODUCT_COPY_FILES += \
 
 # Scripts
 PRODUCT_COPY_FILES += \
+	device/htc/leo/scripts/init.d/01modules:system/etc/init.d/01modules \
 	device/htc/leo/scripts/init.d/02usb_tethering:system/etc/init.d/02usb_tethering \
 	device/htc/leo/scripts/init.d/10mic_level:system/etc/init.d/10mic_level \
 
