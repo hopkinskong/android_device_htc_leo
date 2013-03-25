@@ -64,7 +64,7 @@ BOARD_ADRENO_AVOID_EXTERNAL_TEXTURE := true
 # Wi-Fi Configs
 BOARD_WPA_SUPPLICANT_DRIVER := WEXT
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_wext
-WPA_SUPPLICANT_VERSION      := VER_0_8_X
+WPA_SUPPLICANT_VERSION      := VER_0_6_X
 BOARD_WLAN_DEVICE           := bcm4329
 WIFI_DRIVER_MODULE_PATH     := "/system/lib/modules/bcm4329.ko"
 WIFI_DRIVER_FW_PATH_STA     := "/vendor/firmware/fw_bcm4329.bin"
