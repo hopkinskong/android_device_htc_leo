@@ -11,7 +11,6 @@ else
 fi
 insmod /system/lib/modules/cifs.ko
 insmod /system/lib/modules/fuse.ko
-insmod /system/lib/modules/kineto_gan.ko
 insmod /system/lib/modules/tun.ko
 insmod /system/lib/modules/zram.ko
 echo "+++ Modules Loaded +++";
