@@ -25,14 +25,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += device/htc/leo/overlay
 
-# Sensors & Lights
+# Packages
 PRODUCT_PACKAGES += \
 	sensors.htcleo \
-	lights.htcleo 
-
-# GPS
-PRODUCT_PACKAGES += \
- 	gps.htcleo
+	lights.htcleo \
+ 	gps.htcleo \
+	leo-reference-ril
 
 # Vold
 PRODUCT_COPY_FILES += \
