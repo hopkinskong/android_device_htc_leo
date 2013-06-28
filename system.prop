@@ -5,17 +5,31 @@
 ro.sf.lcd_density=240
 
 # Ril
-rild.libpath=/system/lib/libhtc_ril.so
+rild.libpath=/system/lib/libhtc_ril_wrapper.so
 rild.libargs=-d /dev/smd0
-ro.ril.disable.power.collapse=0
 mobiledata.interfaces=rmnet0,rmnet1,rmnet2,ppp0
-ro.telephony.default_network=3
-ro.telephony.ril.v3=signalstrength,singlepdp,skipbrokendatacall,apptypesim
+ro.ril.ecc.HTC-ELL=92,93,94
+ro.ril.ecc.HTC-WWE=999
+ro.ril.enable.a52.HTC-ITA=1
+ro.ril.enable.a53.HTC-ITA=1
+ro.ril.enable.a52=0
+ro.ril.enable.a53=1
+ro.ril.enable.dtm=1
+ro.ril.gprsclass=12
+ro.ril.hsdpa.category=8
+ro.ril.hsupa.category=5
+ro.ril.hsxpa=2
+ro.ril.enable.prl.recognition=1
+ro.telephony.ril.v3=signalstrengthgsm,singlepdp,apptypesim
+ro.ril.def.agps.mode=2
+ro.ril.enable.managed.roaming=1
+ro.ril.oem.nosim.ecclist=911,112,999,000,08,118,120,122,110,119,995
+ro.ril.emc.mode=2
 ro.vendor.extension_library=/system/lib/libqc-opt.so
 
 # Wi-Fi
 wifi.interface=wlan0 
-wifi.supplicant_scan_interval=45
+wifi.supplicant_scan_interval=60
 
 # Graphics 
 ro.media.dec.jpeg.memcap=20000000 
@@ -33,8 +47,4 @@ dalvik.vm.heapsize=128m
 dalvik.vm.heapgrowthlimit=48m
 dalvik.vm.heapstartsize=5m 
 dalvik.vm.dexopt-data-only=1 
-dalvik.vm.verify-bytecode=false 
-
-# SOFTBUTTONS
-# uncomment below prop to enable softbuttons
-#qemu.hw.mainkeys=0
+dalvik.vm.verify-bytecode=false

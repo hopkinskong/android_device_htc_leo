@@ -2,18 +2,8 @@
 #
 # Load MODULES
 sleep 1
-if [ -f /system/ppp ]
-then
-  echo "Not loading RMNET module as /system/ppp exists"
-else
-  echo "Loading RMNET module as /system/ppp doesn't exist"
-  insmod /system/lib/modules/msm_rmnet.ko
-fi
-insmod /system/lib/modules/tun.ko
 insmod /system/lib/modules/cifs.ko
-insmod /system/lib/modules/alsa-mix-htc-leo.ko
-insmod /system/lib/modules/alsa-pcm-htc-leo.ko
-insmod /system/lib/modules/bcmdhd.ko
-insmod /system/lib/modules/kineto_gan.ko
+insmod /system/lib/modules/fuse.ko
+insmod /system/lib/modules/tun.ko
 insmod /system/lib/modules/zram.ko
 echo "+++ Modules Loaded +++";
